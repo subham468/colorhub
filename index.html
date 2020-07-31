@@ -1,1310 +1,2969 @@
- <!DOCTYPE html>
- <html>
+<!DOCTYPE html>
+<html>
 
- <head>
- 	<!-- TODO: Favicon -->
+<head>
+	<!-- TODO: Favicon -->
 
- 	<link rel="icon" href="img/favicon.ico" type="image/ico" sizes="32x32">
+	<link rel="icon" href="favicon.ico" type="image/ico" sizes="32x32">
 
- 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
- 	<!--Import Google Icon Font-->
- 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
- 	<!-- Compiled and minified CSS -->
- 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+	<link rel="stylesheet" href="materialize/css/animate.min.css" />
+	<!--Import Google Icon Font-->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<!-- Compiled and minified CSS -->
+	<link rel="stylesheet" href="materialize/css/materialize.min.css">
+	<link rel="stylesheet" href="materialize/css/jquery-ui.css">
+	<link rel="stylesheet" href="style.css">
+	<!--Let browser know website is optimized for mobile-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Resourses</title>
 
- 	<link rel="stylesheet"
- 		href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
- 	<link rel="stylesheet" href="style.css">
- 	<!--Let browser know website is optimized for mobile-->
- 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
- 	<title>Resourses</title>
+	<!-- TODO: Jquery plugin -->
+	<script src="materialize/js/jquery.min.js"></script>
 
- 	<!-- TODO: jquery -->
- 	<!-- TODO: Jquery plugin -->
+	<!-- TODO: Jquery UI -->
+	<script src="materialize/js/jquery-ui.min.js"></script>
 
- 	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+	<script src="materialize/js/sweetalert.min.js">
+		import swal from 'sweetalert';
+	</script>
+	<script src="materialize/js/clipboard.min.js"></script>
+	<!-- <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script> -->
+	<script
+		src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js?lang=html&amp;skin=desert"></script>
+</head>
 
- 	<!-- TODO: Jquery UI -->
- 	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
- </head>
+<body>
 
- <body>
+	<!-- TODO: Popup Advertisement -->
+	<div id="dialog" style="display: none; background-color:purple; color: whitesmoke;"
+		class="animate__animated animate__heartBeat">
+		<center>
+			<img src="logo.png" alt="logo">
+			<h3>Welcome to Memento Classes</h3>
+			<h5>The Classes for Learners</h5>
+			<img src="img/paper_plane.png" alt="Popup icon" class="white-text accent-4">
+		</center>
+	</div>
+	</div>
 
- 	<!-- TODO: Popup Advertisement -->
- 	<div id="dialog" style="display: none; background-color:#2DB6ED;" class="animate__animated animate__heartBeat">
- 		<div class="white-text">
- 			<center>
- 				<img src="logo.png" alt="logo">
- 				<h3>Welcome to Memento Classes</h3>
- 				<h5>The Classes for Learners</h5>
- 				<img src="img/paper_plane.png" alt="Popup icon" class="white-text accent-4">
- 			</center>
- 		</div>
- 	</div>
+	<!-- TODO: Social Links -->
 
- 	<!-- TODO: Social Links -->
+	<div class="fixed-action-btn toolbar" style="margin-bottom: 65px">
+		<a class="btn-floating btn-large red pulse">
+			<i class="large material-icons">call</i>
+		</a>
+		<ul>
+			<li><a class="btn red darken-2" href="https://www.youtube.com/channel/UC54U2rosp_K1TAoykulHmDQ"
+					target="_blank"><img src="img/social/youtube.png" alt="Youtube"></a>
+			</li>
+			<li><a class="btn grey lighten-2"
+					href="mailto:paulsubham100@gmail.com?cc=jiouser799@gmail.com&subject=More%20info%20about%20Memento%20Classes&body=Welcome%20to%20Memento%20Classes%20|The%20Classes%20for%20Learners 😊😊!!%20How%20can%20I%20help%20You?"
+					target="_top">
+					<img src="img/social/gmail.png" alt="gmail"></a>
+			</li>
+			<li><a class="btn green accent-3" href="tel:+917975437078" target="_blank"><i
+						class="material-icons">call</i></a>
+			</li>
+			<li><a class="btn pink accent-2" href="https://www.instagram.com/memento.classes/" target="_blank"><img
+						src="img/social/instagam.png" alt="Instagam"></a>
+			</li>
+			<li>
+				<a class="btn indigo darken-2" href="https://www.facebook.com/mementoclasses/" target="_blank">
+					<img src="img/social/facebook.png" alt="Facebook">
+				</a>
+			</li>
+		</ul>
+	</div>
 
- 	<div class="fixed-action-btn toolbar" style="margin-bottom: 65px">
- 		<a class="btn-floating btn-large red pulse">
- 			<i class="large material-icons">call</i>
- 		</a>
- 		<ul>
- 			<li><a class="btn red darken-2" href="https://www.youtube.com/channel/UC54U2rosp_K1TAoykulHmDQ"
- 					target="_blank"><img src="img/social/youtube.png" alt="Youtube"></a>
- 			</li>
- 			<li><a class="btn grey lighten-2"
- 					href="mailto:paulsubham100@gmail.com?cc=jiouser799@gmail.com&subject=More%20info%20about%20Memento%20Classes&body=Welcome%20to%20Memento%20Classes%20|The%20Classes%20for%20Learners 😊😊!!%20How%20can%20I%20help%20You?"
- 					target="_top">
- 					<img src="img/social/gmail.png" alt="gmail"></a>
- 			</li>
- 			<li><a class="btn green accent-3" href="tel:+917975437078" target="_blank"><i
- 						class="material-icons">call</i></a>
- 			</li>
- 			<li><a class="btn pink accent-2" href="https://www.instagram.com/memento.classes/" target="_blank"><img
- 						src="img/social/instagam.png" alt="Instagam"></a>
- 			</li>
- 			<li>
- 				<a class="btn indigo darken-2" href="https://www.facebook.com/mementoclasses/" target="_blank">
- 					<img src="img/social/facebook.png" alt="Facebook">
- 				</a>
- 			</li>
- 		</ul>
- 	</div>
+	<!--TODO: Whatsapp  Adding-->
+	<div class="fixed-action-btn">
+		<a href="https://api.whatsapp.com/send?phone=917975437078" target="_blank"
+			class="btn-large  btn-floating pulse teal">
+			<img src="whatapp.svg" alt="" style="margin: 8px;">
+		</a>
+	</div>
 
- 	<!--TODO: Whatsapp  Adding-->
- 	<div class="fixed-action-btn">
- 		<a href="https://api.whatsapp.com/send?phone=917975437078" target="_blank"
- 			class="btn-large  btn-floating pulse teal">
- 			<img src="whatapp.svg" alt="" style="margin: 8px;">
- 		</a>
- 	</div>
+	<!-- TODO: NavBar -->
+	<div class="navbar-fixed">
+		<nav class="grey lighten-5">
+			<div class="nav-wrapper">
+				<div class="center">
+					<div class="row">
+						<div class="col s12 m12 l12">
+							<a href="index.html">
+								<div class="chip blue-text grey lighten-5 nav_home">
+									<i class="material-icons">home</i>
+								</div>
+							</a>
+							<a href="#red">
+								<div class="chip hoverable grey red-text lighten-4 nav_link">
+									Red
+								</div>
+							</a>
+							<a href="#pink">
+								<div class="chip hoverable grey pink-text lighten-4 nav_link">
+									Pink
+								</div>
+							</a>
+							<a class="dropdown-trigger" data-target='dropdown_purple'>
+								<div class="chip hoverable grey purple-text lighten-4 nav_link">
+									Purple <span class="red-text">+</span>
+								</div>
+							</a>
+							<!-- TODO: Dropdown for purple -->
+							<ul id='dropdown_purple' class='dropdown-content'>
+								<li><a href="#purple" class="hoverable grey purple-text lighten-4">
+										Purple
+									</a>
+								</li>
+								<li class="divider" tabindex="-1"></li>
+								<li><a href="#deep-purple" class="hoverable grey deep-purple-text lighten-4">
+										Deep-Purple
+									</a>
+								</li>
+							</ul>
+							<a href="#indigo">
+								<div class="chip hoverable grey indigo-text lighten-4 nav_link">
+									Indigo
+								</div>
+							</a>
+							<a class="dropdown-trigger" data-target='dropdown_blue'>
+								<div class="chip hoverable grey blue-text lighten-4 nav_link">
+									Blue <span class="red-text">+</span>
+								</div>
+							</a>
 
- 	<!-- TODO: NavBar -->
- 	<div class="navbar-fixed">
- 		<nav class="grey lighten-5">
- 			<div class="nav-wrapper">
- 				<div class="center">
- 					<div class="row">
- 						<div class="col s12 m12 l12">
- 							<a href="index.html">
- 								<div class="chip blue-text grey lighten-5 nav_home">
- 									<i class="material-icons">home</i>
- 								</div>
- 							</a>
- 							<a href="#tool">
- 								<div class="chip hoverable grey lighten-4 nav_link">
- 									<img src="img/icon/tool.png" alt="Tools">
- 									Tools
- 								</div>
- 							</a>
- 							<a href="#html">
- 								<div class="chip hoverable grey lighten-4 nav_link">
- 									<img src="img/icon/html_5.png" alt="HTML">
- 									HTML
- 								</div>
- 							</a>
- 							<a href="#css">
- 								<div class="chip hoverable grey lighten-4 nav_link">
- 									<img src="img/icon/css3.png" alt="CSS">
- 									CSS
- 								</div>
- 							</a>
- 							<a href="#js">
- 								<div class="chip hoverable grey lighten-4 nav_link">
- 									<img src="img/icon/js.png" alt="JS">
- 									JS
- 								</div>
- 							</a>
- 							<a href="#fonts">
- 								<div class="chip hoverable grey lighten-4 nav_link">
- 									<img src="img/icon/font.png" alt="Font">FONTS
- 								</div>
- 							</a>
- 							<a href="#colors">
- 								<div class="chip hoverable grey lighten-4 nav_link">
- 									<img src="img/icon/color.png" alt="Color">
- 									COLORS
- 								</div>
- 							</a>
- 							<a href="#images">
- 								<div class="chip hoverable grey lighten-4 nav_link">
- 									<img src="img/icon/image.png" alt="Images">
- 									IMAGES
- 								</div>
- 							</a>
- 							<a href="#icons">
- 								<div class="chip hoverable grey lighten-4 nav_link">
- 									<img src="img/icon/icons8.png" alt="Icons">
- 									ICONS
- 								</div>
- 							</a>
- 							<a href="#python">
- 								<div class="chip hoverable grey lighten-4 nav_link">
- 									<img src="img/icon/python.png" alt="Python">
- 									Python
- 								</div>
- 							</a>
- 							<a href="#mobile">
- 								<div class="chip hoverable grey lighten-4 nav_link">
- 									<img src="img/icon/mobile.png" alt="Mobile App">
- 									Mobile APP
- 								</div>
- 							</a>
- 							<a href="#codeigniter">
- 								<div class="chip hoverable grey lighten-4 nav_link">
- 									<img src="img/icon/codeigniter.png" alt="CodeIgniter">
- 									CodeIgniter
- 								</div>
- 							</a>
- 							<a href="https://www.instagram.com/mkd00468/" target="_blank">
- 								<div class="chip hoverable grey lighten-4 nav_link">
- 									<img src="img/icon/blog.png" alt="Blog">
- 									BLOG
- 								</div>
- 							</a>
- 						</div>
- 					</div>
- 				</div>
- 			</div>
- 		</nav>
- 	</div>
+							<!-- TODO: Dropdown for blue -->
+							<ul id='dropdown_blue' class='dropdown-content'>
+								<li><a href="#blue" class="hoverable grey blue-text lighten-4">
+										Blue
+									</a>
+								</li>
+								<li class="divider" tabindex="-1"></li>
+								<li><a href="#light-blue" class="hoverable grey light-blue-text lighten-4">
+										Light-Blue
+									</a>
+								</li>
+							</ul>
+							<a href="#cyan">
+								<div class="chip hoverable grey cyan-text lighten-4 nav_link">
+									Cyan
+								</div>
+							</a>
+							<a href="#teal">
+								<div class="chip hoverable grey teal-text lighten-4 nav_link">
+									Teal
+								</div>
+							</a>
+							<a class="dropdown-trigger" data-target='dropdown_green'>
+								<div class="chip hoverable grey green-text lighten-4 nav_link">
+									Green <span class="red-text">+</span>
+								</div>
+							</a>
+							<!-- TODO: Dropdown for green -->
+							<ul id='dropdown_green' class='dropdown-content'>
+								<li><a href="#green" class="hoverable grey green-text lighten-4">
+										Green
+									</a>
+								</li>
+								<li class="divider" tabindex="-1"></li>
+								<li><a href="#light-green" class="hoverable grey light-green-text lighten-4">
+										Light-Green
+									</a>
+								</li>
+							</ul>
+							<a href="#lime">
+								<div class="chip hoverable grey lime-text lighten-4 nav_link">
+									Lime
+								</div>
+							</a>
+							<a href="#yellow">
+								<div class="chip hoverable grey yellow-text lighten-4 nav_link">
+									Yellow
+								</div>
+							</a>
+							<a href="#amber">
+								<div class="chip hoverable grey amber-text lighten-4 nav_link">
+									Amber
+								</div>
+							</a>
+							<a class="dropdown-trigger" data-target='dropdown_orange'>
+								<div class="chip hoverable grey orange-text lighten-4 nav_link">
+									Orange <span class="red-text">+</span>
+								</div>
+							</a>
+							<!-- TODO: Dropdown for orange -->
+							<ul id='dropdown_orange' class='dropdown-content'>
+								<li><a href="#orange" class="hoverable grey orange-text lighten-4">
+										Orange
+									</a>
+								</li>
+								<li class="divider" tabindex="-1"></li>
+								<li><a href="#deep-orange" class="hoverable grey deep-orange-text lighten-4">
+										Deep-Orange
+									</a>
+								</li>
+							</ul>
+							<a href="#brown">
+								<div class="chip hoverable grey brown-text lighten-4 nav_link">
+									Brown
+								</div>
+							</a>
+							<a class="dropdown-trigger" data-target='dropdown_grey'>
+								<div class="chip hoverable grey lighten-4 nav_link">
+									Grey<span class="red-text">+</span>
+								</div>
+							</a>
+							<!-- TODO: Dropdown for orange -->
+							<ul id='dropdown_grey' class='dropdown-content'>
+								<li><a href="#grey" class="hoverable grey grey-text lighten-4">
+										Grey
+									</a>
+								</li>
+								<li class="divider" tabindex="-1"></li>
+								<li><a href="#blue-grey" class="hoverable grey blue-grey-text lighten-4">
+										Blue-Grey
+									</a>
+								</li>
+							</ul>
+							<a href="#miscellaneous">
+								<div class="chip hoverable grey lighten-4 nav_link">
+									misc.
+								</div>
+							</a>
+							<a href="#dvideo">
+								<div class="chip hoverable grey lighten-4 nav_link">
+									D.video
+								</div>
+							</a>
+							<a href="#docs">
+								<div class="chip hoverable grey lighten-4 nav_link">
+									Docs
+								</div>
+							</a>
+							<a href="https://www.instagram.com/mkd00468/" target="_blank">
+								<div class="chip hoverable grey lighten-4 nav_link">
+									<img src="img/icon/blog.png" alt="Blog">
+									BLOG
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</nav>
+	</div>
 
- 	<!-- TODO: Page-1 -->
- 	<header>
- 		<p class="z-depth-1 link">🔥🔥 I just released my YouTube Video on FullStack Web & App Development, Computer
- 			Trick & Tips!
- 			<a href="https://www.youtube.com/channel/UC54U2rosp_K1TAoykulHmDQ/playlists" target="_blank"
- 				class="learning">Start Learning Now ⇾</a>
- 		</p>
+	<!-- TODO: Page-1 -->
+	<header>
+		<p class="z-depth-1 link">🔥🔥 I just released my YouTube Video on FullStack Web & App Development, Computer
+			Trick & Tips!
+			<a href="https://www.youtube.com/channel/UC54U2rosp_K1TAoykulHmDQ/playlists" target="_blank"
+				class="learning">Start Learning Now ⇾</a>
+		</p>
+		<div class="section">
+			<nav class="z-depth-0">
+				<div class="left">
+					<a href="index.html"><img src="logo.png" alt="left side logo" style="margin-left: 50px;"></a>
+				</div>
+				<div class="right">
+					<div class="section">
+						<a href="https://www.instagram.com/memento.classes/" target="_blank">
+							<img src="logo2.png" alt="right side logo" style="margin-right:50px">
+						</a>
+					</div>
+				</div>
+			</nav>
+		</div>
+		<div class="row">
+			<div class="col s12 m12 l12">
+				<h1 class="headline">Paul'<span class="flow-text">S</span> Resources for ..<br>
+					<span class="type flow-text"></span><br> <small>&</small> <br>
+					<span class="type1 flow-text"></span>
+				</h1>
+				<!-- Modal Trigger -->
+				<div class="center">
+					<a class="latest_Video white-text red hoverable waves-effect waves-light btn btn-large modal-trigger"
+						style="font-weight: 500;" href="#modal1">Latest Videos</a>
+				</div>
 
- 		<div class="section">
- 			<nav class="z-depth-0">
- 				<div class="left">
- 					<a href="index.html"><img src="logo.png" alt="left side logo" style="margin-left: 50px;"></a>
- 				</div>
- 				<div class="right">
- 					<div class="section">
- 						<a href="https://www.instagram.com/memento.classes/" target="_blank">
- 							<img src="logo2.png" alt="right side logo" style="margin-right:50px">
- 						</a>
- 					</div>
- 				</div>
- 			</nav>
- 		</div>
- 		<div class="row">
- 			<div class="col s12 m12 l12">
- 				<h1 class="headline">Paul'<span class="flow-text">S</span> Resources for ..<br>
- 					<span class="type flow-text"></span><br> <small>&</small> <br>
- 					<span class="type1 flow-text"></span>
- 				</h1>
- 				<!-- Modal Trigger -->
- 				<div class="center">
- 					<a class="latest_Video white-text red hoverable waves-effect waves-light btn btn-large modal-trigger"
- 						style="font-weight: 500;" href="#modal1">Latest Videos</a>
- 				</div>
+				<!-- Modal Structure -->
+				<div id="modal1" class="modal grey lighten-3 bottom-sheet" style="max-height: 70%;">
+					<div class="modal-content">
+						<div class="right red-text modal-close">
+							<i class="material-icons small">close</i>
+						</div>
+						<h4 class="center red-text headline_bottom">Latest YouTube Videos ..</h4>
+					</div>
+					<div class="center">
+						<ul class="">
+							<li id="demo"></li>
+						</ul>
+					</div>
+				</div>
 
- 				<!-- Modal Structure -->
- 				<div id="modal1" class="modal grey lighten-3 bottom-sheet" style="max-height: 70%;">
- 					<div class="modal-content">
- 						<div class="right red-text modal-close">
- 							<i class="material-icons small">close</i>
- 						</div>
- 						<h4 class="center red-text headline_bottom">Latest YouTube Videos ..</h4>
- 					</div>
- 					<div class="center">
- 						<ul class="">
- 							<li id="demo"></li>
- 						</ul>
- 					</div>
- 				</div>
+			</div>
+		</div>
+	</header>
 
- 			</div>
- 		</div>
- 	</header>
-
- 	<!-- TODO: Page - 2 -->
-
- 	<div class="section">
- 		<div class="section">
- 			<p class="center pink-text text-lighten-3 flow-text">This website is Powered by <a
- 					href="http://mementoclasses.epizy.com/" target="_blank">
- 					<strong>MEMENTO CLASSES</strong>
- 				</a></p>
- 		</div>
- 	</div>
-
- 	<!-- TODO: Page - 3 -->
-
- 	<section class="grey lighten-4" id="tool" style="padding-top: 20px;">
- 		<h2 class="content_headline">Development IDE / Tool</h2>
- 		<!-- TODO:  Card -->
- 		<div class="section">
- 			<div class="row center">
- 				<!-- TODO: 1st ROW  -->
- 				<div class="col l4">
- 					<div class="container">
- 						<div class="card-panel neumorphic card_link">
- 							<a href="https://code.visualstudio.com/" target="_blank">
- 								<div class="card-image">
- 									<img src="img/company/visual.png" height=40>
- 								</div>
- 								<p class="text">Visual Studio Code</p>
- 							</a>
- 						</div>
- 					</div>
- 				</div>
- 				<div class="col l4">
- 					<div class="container">
- 						<div class="card-panel neumorphic card_link">
- 							<a href="http://brackets.io/" target="_blank">
- 								<div class="card-image">
- 									<img src="img/company/brackets.png" height=40>
- 								</div>
- 								<p class="text">Brackets Text Editor</p>
- 							</a>
- 						</div>
- 					</div>
- 				</div>
- 				<div class="col l4">
- 					<div class="container">
- 						<div class="card-panel neumorphic card_link">
- 							<a href="https://www.sublimetext.com/" target="_blank">
- 								<div class="card-image">
- 									<img src="img/company/sublime.jfif" height=40>
- 								</div>
- 								<p class="text">Sublime Text Editor</p>
- 							</a>
- 						</div>
- 					</div>
- 				</div>
-
- 				<!-- TODO: 2nd Row -->
- 				<div class="col l4" style="margin-top: 100px;">
- 					<div class="container">
- 						<div class="card-panel neumorphic card_link">
- 							<a href="https://atom.io/" target="_blank">
- 								<div class="card-image">
- 									<img src="img/company/atom.png" height=40>
- 								</div>
- 								<p class="text">Atom Text Editor</p>
- 							</a>
- 						</div>
- 					</div>
- 				</div>
- 				<div class="col l4" style="margin-top: 100px;">
- 					<div class="container">
- 						<div class="card-panel neumorphic card_link">
- 							<a href="https://www.jetbrains.com/webstorm/" target="_blank">
- 								<div class="card-image">
- 									<img src="img/company/webstorm.png" height=40>
- 								</div>
- 								<p class="text">WebStorm Text Editor</p>
- 							</a>
- 						</div>
- 					</div>
- 				</div>
- 				<div class="col l4" style="margin-top: 100px;">
- 					<div class="container">
- 						<div class="card-panel neumorphic card_link">
- 							<a href="https://codepen.io/" target="_blank">
- 								<div class="card-image">
- 									<img src="img/company/codepen.png" height=40>
- 								</div>
- 								<p class="text">CodePen</p>
- 							</a>
- 						</div>
- 					</div>
- 				</div>
- 			</div>
- 		</div>
-
- 	</section>
- 	<!-- TODO: Page - 4 -->
- 	<section class="grey lighten-5 scrollspy" id="html" style="padding-top: 20px;">
- 		<h2 class="content_headline">HTML RESOURCES</h2>
- 		<!-- TODO:  Card -->
- 		<div class="section">
- 			<div class="row center">
- 				<!-- TODO: 1st ROW  -->
- 				<div class="col l4">
- 					<div class="container">
- 						<div class="card-panel neumorphic card_link">
- 							<a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">
- 								<div class="card-image">
- 									<img src="img/icon/html_5.png" height=40>
- 								</div>
- 								<p class="text">HTML</p>
- 							</a>
- 						</div>
- 					</div>
- 				</div>
- 				<div class="col l4">
- 					<div class="container">
- 						<div class="card-panel neumorphic card_link">
- 							<a href="https://docs.emmet.io/cheat-sheet/" target="_blank">
- 								<div class="card-image">
- 									<img src="img/company/emmet.png" height=40>
- 								</div>
- 								<p class="text">Emmet Cheat Sheet</p>
- 							</a>
- 						</div>
- 					</div>
- 				</div>
- 				<div class="col l4">
- 					<div class="container">
- 						<div class="card-panel neumorphic card_link">
- 							<a href="https://html.com/" target="_blank">
- 								<div class="card-image">
- 									<img src="img/company/html_cheat_sheet.png" height=40>
- 								</div>
- 								<p class="text">HTML Cheat Sheet</p>
- 							</a>
- 						</div>
- 					</div>
- 				</div>
-
- 				<!-- TODO: 2nd Row -->
- 				<div class="col l4" style="margin-top: 100px;">
- 					<div class="container">
- 						<div class="card-panel neumorphic card_link">
- 							<a href="https://bennettfeely.com/clippy/" target="_blank">
- 								<div class="card-image">
- 									<img src="img/company/clippy.png" height=40>
- 								</div>
- 								<p class="text">Clippy</p>
- 							</a>
- 						</div>
- 					</div>
- 				</div>
- 				<div class="col l4" style="margin-top: 100px;">
- 					<div class="container">
- 						<div class="card-panel neumorphic card_link">
- 							<a href="https://randomuser.me/" target="_blank">
- 								<div class="card-image">
- 									<img src="img/company/randomuser.png" height=40>
- 								</div>
- 								<p class="text">Random Generator</p>
- 							</a>
- 						</div>
- 					</div>
- 				</div>
- 				<div class="col l4" style="margin-top: 100px;">
- 					<div class="container">
- 						<div class="card-panel neumorphic card_link">
- 							<a href="https://www.toptal.com/designers/subtlepatterns/" target="_blank">
- 								<div class="card-image">
- 									<img src="img/company/subtlepatterns.png" height=40>
- 								</div>
- 								<p class="text">Subtle Patterns</p>
- 							</a>
- 						</div>
- 					</div>
- 				</div>
- 			</div>
- 		</div>
- 	</section>
- 	<!-- TODO: Page - 5 -->
- 	<section class="grey lighten-4 scrollspy" id="css" style="padding-top: 20px;">
- 		<h2 class="content_headline">CSS RESOURCES</h2>
- 		<!-- TODO:  Card -->
- 		<div class="section">
- 			<div class="row center">
- 				<!-- TODO: 1st ROW  -->
- 				<div class="col l4">
- 					<div class="container">
- 						<div class="card-panel neumorphic card_link">
- 							<a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank">
- 								<div class="card-image">
- 									<img src="img/icon/css3.png" height=40>
- 								</div>
- 								<p class="text">CSS</p>
- 							</a>
- 						</div>
- 					</div>
- 				</div>
- 				<div class="col l4">
- 					<div class="container">
- 						<div class="card-panel neumorphic card_link">
- 							<a href="http://tympanus.net/codrops/css_reference/" target="_blank">
- 								<div class="card-image">
- 									<img src="img/company/codrops.png" height=40>
- 								</div>
- 								<p class="text">Codrops</p>
- 							</a>
- 						</div>
- 					</div>
- 				</div>
- 				<div class="col l4">
- 					<div class="container">
- 						<div class="card-panel neumorphic card_link">
- 							<a href="https://animate.style/" target="_blank">
- 								<div class="card-image">
- 									<img src="img/company/animatecss.png" height=40>
- 								</div>
- 								<p class="text">Animate CSS</p>
- 							</a>
- 						</div>
- 					</div>
- 				</div>
-
- 				<!-- TODO: 2nd Row -->
- 				<div class="col l4" style="margin-top: 100px;">
- 					<div class="container">
- 						<div class="card-panel neumorphic card_link">
- 							<a href="https://code.tutsplus.com/tutorials/the-30-css-selectors-you-must-memorize--net-16048"
- 								target="_blank">
- 								<div class="card-image">
- 									<img src="img/company/envato.svg" height=40 width=200>
- 								</div>
- 								<p class="text">CSS by Tutplus</p>
- 							</a>
- 						</div>
- 					</div>
- 				</div>
- 				<div class="col l4" style="margin-top: 100px;">
- 					<div class="container">
- 						<div class="card-panel neumorphic card_link">
- 							<a href="https://cubic-bezier.com/#.17,.67,.83,.67" target="_blank">
- 								<div class="card-image">
- 									<img src="img/company/cubic.png" height=40>
- 								</div>
- 								<p class="text">Cubic-Bezier</p>
- 							</a>
- 						</div>
- 					</div>
- 				</div>
- 				<div class="col l4" style="margin-top: 100px;">
- 					<div class="container">
- 						<div class="card-panel neumorphic card_link">
- 							<a href="https://easings.net/" target="_blank">
- 								<div class="card-image">
- 									<img src="img/company/easings.png" height=40>
- 								</div>
- 								<p class="text">CSS Easing</p>
- 							</a>
- 						</div>
- 					</div>
- 				</div>
- 			</div>
- 		</div>
- 	</section>
- 	<!-- TODO: Page - 6 -->
- 	<section class="grey lighten-5 scrollspy" id="js" style="padding-top: 20px;">
- 		<h2 class="content_headline">JavaScript RESOURCES</h2>
- 		<!-- TODO:  Card -->
- 		<div class="section">
- 			<div class="row center">
- 				<!-- TODO: 1st ROW  -->
- 				<div class="col l4">
- 					<div class="container">
- 						<div class="card-panel neumorphic card_link">
- 							<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
- 								<div class="card-image">
- 									<img src="img/icon/js.png" height=40>
- 								</div>
- 								<p class="text">JavaScript</p>
- 							</a>
- 						</div>
- 					</div>
- 				</div>
- 				<div class="col l4">
- 					<div class="container">
- 						<div class="card-panel neumorphic card_link">
- 							<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence"
- 								target="_blank">
- 								<div class="card-image">
- 									<img src="img/company/mdn.png" height=40>
- 								</div>
- 								<p class="text">Operator Precedence</p>
- 							</a>
- 						</div>
- 					</div>
- 				</div>
- 				<div class="col l4">
- 					<div class="container">
- 						<div class="card-panel neumorphic card_link">
- 							<a href="https://developer.mozilla.org/en-US/docs/Web/Events" target="_blank">
- 								<div class="card-image">
- 									<img src="img/company/mdn.png" height=40>
- 								</div>
- 								<p class="text">JavaScript Event</p>
- 							</a>
- 						</div>
- 					</div>
- 				</div>
-
-
- 				<!-- TODO: 2nd Row -->
- 				<div class="col l4" style="margin-top: 100px;">
- 					<div class="container">
- 						<div class="card-panel neumorphic card_link">
- 							<a href="http://youmightnotneedjquery.com/" target="_blank">
- 								<div class="card-image">
- 									<img src="img/company/dom.png" height=40>
- 								</div>
- 								<p class="text">DOM Manipulation</p>
- 							</a>
- 						</div>
- 					</div>
- 				</div>
- 				<div class="col l4" style="margin-top: 100px;">
- 					<div class="container">
- 						<div class="card-panel neumorphic card_link">
- 							<a href="http://www.responsivegridsystem.com/" target="_blank">
- 								<div class="card-image">
- 									<img src="img/company/responsivegrid.png" height=40>
- 								</div>
- 								<p class="text">Responsive Grid</p>
- 							</a>
- 						</div>
- 					</div>
- 				</div>
- 				<div class="col l4" style="margin-top: 100px;">
- 					<div class="container">
- 						<div class="card-panel neumorphic card_link">
- 							<a href="https://caniuse.com/" target="_blank">
- 								<div class="card-image">
- 									<img src="img/company/caniuse.png" height=40>
- 								</div>
- 								<p class="text">Can I Use?</p>
- 							</a>
- 						</div>
- 					</div>
- 				</div>
+	<!-- TODO: Page - 2 -->
+	<div class="section">
+		<div class="section">
+			<p class="center pink-text text-lighten-3 flow-text">This website is Powered by <a
+					href="http://mementoclasses.epizy.com/" target="_blank">
+					<strong>MEMENTO CLASSES</strong>
+				</a></p>
+		</div>
+	</div>
 
 
 
 
 
- 			</div>
- 		</div>
- 	</section>
- 	<!-- TODO: Page - 7 -->
- 	<section class="grey lighten-4 scrollspy" id="fonts" style="padding-top: 20px;">
- 		<h2 class="content_headline">FONTS AND TYPOGRAPHY TOOLS</h2>
- 		<!-- TODO:  Card -->
- 		<div class="section">
- 			<div class="row center">
- 				<!-- TODO: 1st ROW  -->
- 				<div class="col l4">
- 					<div class="container">
- 						<div class="card-panel neumorphic card_link">
- 							<a href="https://fonts.google.com/" target="_blank">
- 								<div class="card-image">
- 									<img src="img/company/googlefonts.png" height=40>
- 								</div>
- 								<p class="text">Google Fonts</p>
- 							</a>
- 						</div>
- 					</div>
- 				</div>
- 				<div class="col l4">
- 					<div class="container">
- 						<div class="card-panel neumorphic card_link">
- 							<a href="https://www.fontsquirrel.com/" target="_blank">
- 								<div class="card-image">
- 									<img src="img/company/fontsquirrel.jpg" height=40>
- 								</div>
- 								<p class="text">Fontsquirrel</p>
- 							</a>
- 						</div>
- 					</div>
- 				</div>
- 				<div class="col l4">
- 					<div class="container">
- 						<div class="card-panel neumorphic card_link">
- 							<a href="https://www.creativebloq.com/graphic-design-tips/best-free-fonts-for-designers-1233380"
- 								target="_blank">
- 								<div class="card-image">
- 									<img src="img/company/creativebloq.png" height=40>
- 								</div>
- 								<p class="text">Creative Bloq fonts</p>
- 							</a>
- 						</div>
- 					</div>
- 				</div>
+	<!-- TODO: Page - 3 -->
+	<section class="grey lighten-4 scrollspy" id="red" style="padding-top: 20px;">
+		<h2 class="content_headline red-text">Red color</h2>
+		<!-- TODO: Header Name -->
+		<div class="row">
+			<div class="row">
+				<div class="col l3">
+					<p class="center red-text header_name">Darken Color</p>
+				</div>
+				<div class="col l3">
+					<p class="center red-text header_name">Lighten Color</p>
+				</div>
+				<div class="col l3">
+					<p class="center red-text header_name">Accent Color</p>
+				</div>
+				<div class="col l3">
+					<p class="center red-text header_name">Color</p>
+				</div>
+			</div>
+			<!-- TODO: Sub-Header Name -->
+			<div class="row">
 
- 				<!-- TODO: 2nd Row -->
- 				<div class="col l4" style="margin-top: 100px;">
- 					<div class="container">
- 						<div class="card-panel neumorphic card_link">
- 							<a href="https://fonts.adobe.com/fonts" target="_blank">
- 								<div class="card-image">
- 									<img src="img/company/adobe.ico" height=40>
- 								</div>
- 								<p class="text">Adobe Fonts</p>
- 							</a>
- 						</div>
- 					</div>
- 				</div>
- 				<div class="col l4" style="margin-top: 100px;">
- 					<div class="container">
- 						<div class="card-panel neumorphic card_link">
- 							<a href="https://appicon.co/" target="_blank">
- 								<div class="card-image">
- 									<img src="img/company/appicon.ico" height=40>
- 								</div>
- 								<p class="text">App Icon</p>
- 							</a>
- 						</div>
- 					</div>
- 				</div>
- 				<div class="col l4" style="margin-top: 100px;">
- 					<div class="container">
- 						<div class="card-panel neumorphic card_link">
- 							<a href="http://draw.io/" target="_blank">
- 								<div class="card-image">
- 									<img src="img/company/draw.png" height=40>
- 								</div>
- 								<p class="text">Draw Flow Chart</p>
- 							</a>
- 						</div>
- 					</div>
+				<div class="col l9">
+					<!-- TODO: row- 1 -->
+					<div class="row">
+						<div class="col l4" style=" padding-left: 50px;">
+							<a class="btn red darken-1 waves-effect waves-dark white-text small_button"
+								onClick="run('#e53935')" data-clipboard-text="#e53935">#e53935 <br> red darken-1</a>
+						</div>
 
- 				</div>
- 			</div>
- 		</div>
- 	</section>
- 	<!-- TODO: Page - 8 -->
- 	<section class="grey lighten-5 scrollspy" id="colors" style="padding-top: 20px;">
- 		<h2 class="content_headline">COLORS AND TOOLS</h2>
- 		<!-- TODO:  Card -->
- 		<div class="section">
- 			<div class="row center">
- 				<!-- TODO: 1st ROW  -->
- 				<div class="col l4">
- 					<div class="container">
- 						<div class="card-panel neumorphic card_link">
- 							<a href="http://flatuicolors.com/" target="_blank">
- 								<div class="card-image">
- 									<img src="img/company/flatuicolors.png" height=40>
- 								</div>
- 								<p class="text">Flat UI Colors</p>
- 							</a>
- 						</div>
- 					</div>
- 				</div>
- 				<div class="col l4">
- 					<div class="container">
- 						<div class="card-panel neumorphic card_link">
- 							<a href="https://www.materialpalette.com/" target="_blank">
- 								<div class="card-image">
- 									<img src="img/company/materialpalette.jpg" height=40>
- 								</div>
- 								<p class="text">Material Palette</p>
- 							</a>
- 						</div>
- 					</div>
- 				</div>
- 				<div class="col l4">
- 					<div class="container">
- 						<div class="card-panel neumorphic card_link">
- 							<a href="https://uigradients.com/" target="_blank">
- 								<div class="card-image">
- 									<img src="img/company/uigradients.png" height=40>
- 								</div>
- 								<p class="text">UI Gradients</p>
- 							</a>
- 						</div>
- 					</div>
- 				</div>
+						<div class="col l4" style=" padding-left: 50px;">
+							<a class="btn red lighten-1  waves-effect waves-dark  white-text small_button"
+								onClick="run('#ef5350')" data-clipboard-text="#ef5350">#ef5350 <br> red lighten-1</a>
+						</div>
 
- 				<!-- TODO: 2nd Row -->
- 				<div class="col l4" style="margin-top: 100px;">
- 					<div class="container">
- 						<div class="card-panel neumorphic card_link">
- 							<a href="https://colorhunt.co/" target="_blank">
- 								<div class="card-image">
- 									<img src="img/company/colorhunt.gif" height=40>
- 								</div>
- 								<p class="text">Colorhunt Palettes</p>
- 							</a>
- 						</div>
- 					</div>
- 				</div>
- 				<div class="col l4" style="margin-top: 100px;">
- 					<div class="container">
- 						<div class="card-panel neumorphic card_link">
- 							<a href="http://paletton.com/" target="_blank">
- 								<div class="card-image">
- 									<img src="img/company/paletton.png" height=40>
- 								</div>
- 								<p class="text">Paletton</p>
- 							</a>
- 						</div>
- 					</div>
- 				</div>
- 				<div class="col l4" style="margin-top: 100px;">
- 					<div class="container">
- 						<div class="card-panel neumorphic card_link">
- 							<a href="https://www.0to255.com/" target="_blank">
- 								<div class="card-image">
- 									<img src="img/company/0to255.png" height=40>
- 								</div>
- 								<p class="text">0to255</p>
- 							</a>
- 						</div>
- 					</div>
- 				</div>
- 			</div>
- 		</div>
- 	</section>
- 	<!-- TODO: Page - 8 -->
- 	<section class="grey lighten-4 scrollspy" id="images" style="padding-top: 20px;">
- 		<h2 class="content_headline">IMAGES AND VIDEOS</h2>
- 		<!-- TODO:  Card -->
- 		<div class="section">
- 			<div class="row center">
- 				<!-- TODO: 1st ROW  -->
- 				<div class="col l4">
- 					<div class="container">
- 						<div class="card-panel neumorphic card_link">
- 							<a href="https://unsplash.com/" target="_blank">
- 								<div class="card-image">
- 									<img src="img/company/unsplash.svg" height=40>
- 								</div>
- 								<p class="text">Unsplash</p>
- 							</a>
- 						</div>
- 					</div>
- 				</div>
- 				<div class="col l4">
- 					<div class="container">
- 						<div class="card-panel neumorphic card_link">
- 							<a href="http://thestocks.im/" target="_blank">
- 								<div class="card-image">
- 									<img src="img/company/the_stock.png" height=40 width=60>
- 								</div>
- 								<p class="text">The Stocks</p>
- 							</a>
- 						</div>
- 					</div>
- 				</div>
- 				<div class="col l4">
- 					<div class="container">
- 						<div class="card-panel neumorphic card_link">
- 							<a href="https://pixabay.com/" target="_blank">
- 								<div class="card-image">
- 									<img src="img/company/pixaby.png" height=40>
- 								</div>
- 								<p class="text">Pixaby</p>
- 							</a>
- 						</div>
- 					</div>
- 				</div>
+						<div class="col l4" style=" padding-left: 50px;">
+							<a class="btn red accent-1 waves-effect waves-dark white-text small_button"
+								onClick="run('#ff8a80')" data-clipboard-text="#ff8a80">#ff8a80 <br> red accent-1</a>
+						</div>
 
- 				<!-- TODO: 2nd Row -->
- 				<div class="col l4" style="margin-top: 100px;">
- 					<div class="container">
- 						<div class="card-panel neumorphic card_link">
- 							<a href="https://www.remove.bg/upload" target="_blank">
- 								<div class="card-image">
- 									<img src="img/company/removebg.svg" height=40 width=200>
- 								</div>
- 								<p class="text">Remove Bg</p>
- 							</a>
- 						</div>
- 					</div>
- 				</div>
- 				<div class="col l4" style="margin-top: 100px;">
- 					<div class="container">
- 						<div class="card-panel neumorphic card_link">
- 							<a href="https://coverr.co/" target="_blank">
- 								<div class="card-image">
- 									<img src="img/company/coverr.png" height=40>
- 								</div>
- 								<p class="text">Coverr</p>
- 							</a>
- 						</div>
- 					</div>
- 				</div>
+					</div>
 
- 				<div class="col l4" style="margin-top: 100px;">
- 					<div class="container">
- 						<div class="card-panel neumorphic card_link">
- 							<a href="https://isorepublic.com/" target="_blank">
- 								<div class="card-image">
- 									<img src="img/company/isorepublic.png" height=40>
- 								</div>
- 								<p class="text">ISO Republic</p>
- 							</a>
- 						</div>
- 					</div>
- 				</div>
- 			</div>
- 		</div>
- 	</section>
- 	<!-- TODO: Page - 8 -->
- 	<section class="grey lighten-5 scrollspy" id="icons" style="padding-top: 20px;">
- 		<h2 class="content_headline">ICONS AND TOOLS</h2>
- 		<!-- TODO:  Card -->
- 		<div class="section">
- 			<div class="row center">
- 				<!-- TODO: 1st ROW  -->
- 				<div class="col l4">
- 					<div class="container">
- 						<div class="card-panel neumorphic card_link">
- 							<a href="https://fontawesome.com/v4.7.0/icons/" target="_blank">
- 								<div class="card-image">
- 									<img src="img/company/fontawesome.png" height=40>
- 								</div>
- 								<p class="text">Font Awesome</p>
- 							</a>
- 						</div>
- 					</div>
- 				</div>
- 				<div class="col l4">
- 					<div class="container">
- 						<div class="card-panel neumorphic card_link">
- 							<a href="https://ionicons.com/" target="_blank">
- 								<div class="card-image">
- 									<img src="img/company/ionicons.png" height=40>
- 								</div>
- 								<p class="text">Ionicons</p>
- 							</a>
- 						</div>
- 					</div>
- 				</div>
- 				<div class="col l4">
- 					<div class="container">
- 						<div class="card-panel neumorphic card_link">
- 							<a href="https://www.flaticon.com/" target="_blank">
- 								<div class="card-image">
- 									<img src="img/company/flaticon.png" height=40>
- 								</div>
- 								<p class="text">Flaticon</p>
- 							</a>
- 						</div>
- 					</div>
- 				</div>
+					<!-- TODO: row- 2 -->
+					<div class="row">
+						<div class="col l4" style=" padding-left: 50px;">
+							<a class="btn red darken-2 white-text waves-effect waves-dark small_button"
+								onClick="run('#d32f2f')" data-clipboard-text="#d32f2f">#d32f2f <br> red darken-2</a>
+						</div>
+						<div class="col l4" style="padding-left: 50px;">
+							<a class="btn red lighten-2 white-text waves-effect waves-dark small_button"
+								onClick="run('#e57373')" data-clipboard-text="#e57373">#e57373 <br> red lighten-2</a>
+						</div>
+						<div class="col l4" style=" padding-left: 50px;">
+							<a class="btn red accent-2 white-text waves-effect waves-dark small_button"
+								onClick="run('#ff5252')" data-clipboard-text="#ff5252">#ff5252 <br> red accent-2</a>
+						</div>
 
- 				<!-- TODO: 2nd Row -->
- 				<div class="col l4" style="margin-top: 100px;">
- 					<div class="container">
- 						<div class="card-panel neumorphic card_link">
- 							<a href="https://imagecompressor.com/" target="_blank">
- 								<div class="card-image">
- 									<img src="img/company/optimizilla.png" height=40>
- 								</div>
- 								<p class="text">Optimizilla</p>
- 							</a>
- 						</div>
- 					</div>
- 				</div>
- 				<div class="col l4" style="margin-top: 100px;">
- 					<div class="container">
- 						<div class="card-panel neumorphic card_link">
- 							<a href="https://icomoon.io/" target="_blank">
- 								<div class="card-image">
- 									<img src="img/company/icomoon.png" height=40>
- 								</div>
- 								<p class="text">Icomoon</p>
- 							</a>
- 						</div>
- 					</div>
- 				</div>
- 				<div class="col l4" style="margin-top: 100px;">
- 					<div class="container">
- 						<div class="card-panel neumorphic card_link">
- 							<a href="https://realfavicongenerator.net/" target="_blank">
- 								<div class="card-image">
- 									<img src="img/company/favicongenerator.png" height=40>
- 								</div>
- 								<p class="text">Real favicon Generator</p>
- 							</a>
- 						</div>
- 					</div>
- 				</div>
+					</div>
+					<!-- TODO: row- 3 -->
+					<div class="row">
+						<div class="col l4" style="padding-left: 50px;">
+							<a class="btn red darken-3 waves-effect waves-dark white-text small_button"
+								onClick="run('#c62828')" data-clipboard-text="#c62828">#c62828 <br> red darken-3</a>
+						</div>
 
- 			</div>
- 		</div>
- 	</section>
- 	<!-- TODO: Page - 8 -->
- 	<section class="grey lighten-4 scrollspy" id="python" style="padding-top: 20px;">
- 		<h2 class="content_headline">python</h2>
- 		<!-- TODO:  Card -->
- 		<div class="section">
- 			<div class="row center">
- 				<!-- TODO: 1st ROW  -->
- 				<div class="col l4">
- 					<div class="container">
- 						<div class="card-panel neumorphic card_link">
- 							<a href="https://www.python.org/" target="_blank">
- 								<div class="card-image">
- 									<img src="img/icon/python.png" height=40>
- 								</div>
- 								<p class="text">Python</p>
- 							</a>
- 						</div>
- 					</div>
- 				</div>
- 				<div class="col l4">
- 					<div class="container">
- 						<div class="card-panel neumorphic card_link">
- 							<a href="https://www.djangoproject.com/" target="_blank">
- 								<div class="card-image">
- 									<img src="img/company/django.png" height=40>
- 								</div>
- 								<p class="text">Django</p>
- 							</a>
- 						</div>
- 					</div>
- 				</div>
- 				<div class="col l4">
- 					<div class="container">
- 						<div class="card-panel neumorphic card_link">
- 							<a href="https://www.mongodb.com/" target="_blank">
- 								<div class="card-image">
- 									<img src="img/company/mongodb.png" height=40>
- 								</div>
- 								<p class="text">MongoDB</p>
- 							</a>
- 						</div>
- 					</div>
- 				</div>
+						<div class="col l4" style="padding-left: 50px;">
+							<a class="btn red lighten-3 waves-effect waves-dark white-text small_button"
+								onClick="run('#ef9a9a')" data-clipboard-text="#ef9a9a">#ef9a9a <br> red lighten-3</a>
+						</div>
 
- 				<!-- TODO: 2nd Row -->
- 				<div class="col l4	" style="margin-top: 100px;">
- 					<div class="container">
- 						<div class="card-panel neumorphic card_link">
- 							<a href="https://docs.python.org/3/library/tkinter.html" target="_blank">
- 								<div class="card-image">
- 									<img src="img/company/tkinter.jfif" height=40>
- 								</div>
- 								<p class="text">Tkinter</p>
- 							</a>
- 						</div>
- 					</div>
- 				</div>
- 				<div class="col l4" style="margin-top: 100px;">
- 					<div class="container">
- 						<div class="card-panel neumorphic card_link">
- 							<a href="https://getbootstrap.com/" target="_blank">
- 								<div class="card-image">
- 									<img src="img/company/bootstrap.png" height=40>
- 								</div>
- 								<p class="text">Bootstrap</p>
- 							</a>
- 						</div>
- 					</div>
- 				</div>
- 				<div class="col l4" style="margin-top: 100px;">
- 					<div class="container">
- 						<div class="card-panel neumorphic card_link">
- 							<a href="https://materializecss.com/" target="_blank">
- 								<div class="card-image">
- 									<img src="img/company/materializecss.png" height=40>
- 								</div>
- 								<p class="text">MaterializeCSS</p>
- 							</a>
- 						</div>
- 					</div>
- 				</div>
- 			</div>
- 		</div>
- 	</section>
- 	<!-- TODO: Page - 8 -->
- 	<section class="grey lighten-5 scrollspy" id="mobile" style="padding-top: 20px;">
- 		<h2 class="content_headline">Mobile App Development</h2>
- 		<!-- TODO:  Card -->
- 		<div class="section">
- 			<div class="row center">
- 				<!-- TODO: 1st ROW  -->
- 				<div class="col l4">
- 					<div class="container">
- 						<div class="card-panel neumorphic card_link">
- 							<a href="https://flutter.dev/" target="_blank">
- 								<div class="card-image">
- 									<img src="img/company/flutter.png" height=40>
- 								</div>
- 								<p class="text">Flutter</p>
- 							</a>
- 						</div>
- 					</div>
- 				</div>
- 				<div class="col l4">
- 					<div class="container">
- 						<div class="card-panel neumorphic card_link">
- 							<a href="https://reactnative.dev/" target="_blank">
- 								<div class="card-image">
- 									<img src="img/company/react_native.png" height=40>
- 								</div>
- 								<p class="text">React Native</p>
- 							</a>
- 						</div>
- 					</div>
- 				</div>
- 				<div class="col l4">
- 					<div class="container">
- 						<div class="card-panel neumorphic card_link">
- 							<a href="https://developer.android.com/studio" target="_blank">
- 								<div class="card-image">
- 									<img src="img/company/android_studio.jfif" height=40>
- 								</div>
- 								<p class="text">Android Studio</p>
- 							</a>
- 						</div>
- 					</div>
- 				</div>
- 				<!-- TODO: 2nd Row -->
- 				<div class="col l4" style="margin-top: 100px;">
- 					<div class="container">
- 						<div class="card-panel neumorphic card_link">
- 							<a href="https://www.adobe.com/in/products/xd.html" target="_blank">
- 								<div class="card-image">
- 									<img src="img/company/adobexd.png" height=40>
- 								</div>
- 								<p class="text">Adobe XD</p>
- 							</a>
- 						</div>
- 					</div>
- 				</div>
- 				<div class="col l4" style="margin-top: 100px;">
- 					<div class="container">
- 						<div class="card-panel neumorphic card_link">
- 							<a href="https://www.photoshop.com/en" target="_blank">
- 								<div class="card-image">
- 									<img src="img/company/photoshop.png" height=40>
- 								</div>
- 								<p class="text">Photoshop</p>
- 							</a>
- 						</div>
- 					</div>
- 				</div>
- 				<div class="col l4" style="margin-top: 100px;">
- 					<div class="container">
- 						<div class="card-panel neumorphic card_link">
- 							<a href="https://www.figma.com/" target="_blank">
- 								<div class="card-image">
- 									<img src="img/company/figma.png" height=40>
- 								</div>
- 								<p class="text">Figma</p>
- 							</a>
- 						</div>
- 					</div>
+						<div class="col l4" style="padding-left: 50px;">
+							<a class="btn red accent-3 waves-effect waves-dark white-text small_button"
+								onClick="run('#ff1744')" data-clipboard-text="#ff1744">#ff1744 <br> red accent-3</a>
+						</div>
 
- 				</div>
- 			</div>
- 		</div>
- 	</section>
- 	<!-- TODO: Page - 8 -->
- 	<section class="grey lighten-4 scrollspy" id="codeigniter" style="padding-top: 20px;">
- 		<h2 class="content_headline">CodeIgniter</h2>
- 		<!-- TODO:  Card -->
- 		<div class="section">
- 			<div class="row center">
- 				<!-- TODO: 1st ROW  -->
- 				<div class="col l4">
- 					<div class="container">
- 						<div class="card-panel neumorphic card_link">
- 							<a href="https://codeigniter.com/" target="_blank">
- 								<div class="card-image">
- 									<img src="img/icon/codeigniter.png" height=40>
- 								</div>
- 								<p class="text">CodeIgniter</p>
- 							</a>
- 						</div>
- 					</div>
- 				</div>
- 				<div class="col l4">
- 					<div class="container">
- 						<div class="card-panel neumorphic card_link">
- 							<a href="http://brackets.io/" target="_blank">
- 								<div class="card-image">
- 									<img src="img/icon/mysql.png" height=40>
- 								</div>
- 								<p class="text">MySQL</p>
- 							</a>
- 						</div>
- 					</div>
- 				</div>
- 				<div class="col l4">
- 					<div class="container">
- 						<div class="card-panel neumorphic card_link">
- 							<a href="https://www.sublimetext.com/" target="_blank">
- 								<div class="card-image">
- 									<img src="img/icon/php.png" height=40>
- 								</div>
- 								<p class="text">PHP</p>
- 							</a>
- 						</div>
- 					</div>
- 				</div>
- 				<!-- TODO: 2nd Row -->
- 				<div class="col l4" style="margin-top: 100px;">
- 					<div class="container">
- 						<div class="card-panel neumorphic card_link">
- 							<a href="https://firebase.google.com/" target="_blank">
- 								<div class="card-image">
- 									<img src="img/company/firebase.png" height=40>
- 								</div>
- 								<p class="text">Firebase</p>
- 							</a>
- 						</div>
- 					</div>
- 				</div>
- 				<div class="col l4" style="margin-top: 100px;">
- 					<div class="container">
- 						<div class="card-panel neumorphic card_link">
- 							<a href="https://marketingplatform.google.com/about/analytics/" target="_blank">
- 								<div class="card-image">
- 									<img src="img/company/googleanalytics.png" height=40>
- 								</div>
- 								<p class="text">Google Analytics</p>
- 							</a>
- 						</div>
- 					</div>
- 				</div>
- 				<div class="col l4" style="margin-top: 100px;">
- 					<div class="container">
- 						<div class="card-panel neumorphic card_link">
- 							<a href="https://developers.google.com/speed/pagespeed/insights/" target="_blank">
- 								<div class="card-image">
- 									<img src="img/company/googledev.png" height=40>
- 								</div>
- 								<p class="text">Google PageSpeed</p>
- 							</a>
- 						</div>
- 					</div>
- 				</div>
- 			</div>
- 		</div>
- 	</section>
+					</div>
+					<!-- TODO: row- 4 -->
+					<div class="row">
+						<div class="col l4" style=" padding-left: 50px;">
+							<a class="btn red darken-4 white-text waves-effect waves-light small_button"
+								onClick="run('#b71c1c')" data-clipboard-text="#b71c1c">#b71c1c <br> red darken-4</a>
+						</div>
 
- 	<!-- TODO: Hope You Enjoy -->
- 	<div class="section purple">
- 		<div class="section">
- 			<p class="center white-text flow-text">🔥 Hope Resources are very helpful for You 😊 Hope You
- 				Enjoy
- 				it 🔥</p>
- 		</div>
- 	</div>
+						<div class="col l4" style=" padding-left: 50px;">
+							<a class="btn red lighten-4 black-text waves-effect waves-red small_button"
+								onClick="run('#ffcdd2')" data-clipboard-text="#ffcdd2">#ffcdd2 <br> red lighten-4</a>
+						</div>
 
- 	<!-- TODO: Footer -->
- 	<footer class="page-footer" style="background-color: #1d113f; width:100%; height: auto;">
- 		<div class="container">
- 			<div class="row">
- 				<div class="col l6 s12">
- 					<a href="http://mementoclasses.epizy.com/" target="_blank"><img src="img/logo.gif" alt="" width=120
- 							height=90></a>
- 					<p class="grey-text text-lighten-4">Memento Classes is the Computer Education Center.
- 						<br> Providing
- 						effective learning programs for Learners.</p>
- 				</div>
- 				<div class="col l4 offset-l2 s12">
- 					<h4 class="white-text">For More Queries : </h4>
- 					<ul>
- 						<li class="flow-text" id="mail">
- 							<a class="grey-text text-lighten-3"
- 								href="mailto:paulsubham100@gmail.com?cc=jiouser799@gmail.com&subject=More%20info%20about%20Memento%20Classes&body=Welcome%20to%20Memento%20Classes%20|The%20Classes%20for%20Learners 😊😊!!%20How%20can%20I%20help%20You?"
- 								target="_blank">paulsubham100@gmail.com<a>
- 						</li>
+						<div class="col l4" style="padding-left: 50px;">
+							<a class="btn red accent-4 white-text waves-effect waves-light small_button"
+								onClick="run('#d50000')" data-clipboard-text="#d50000">#d50000 <br> red accent-4</a>
+						</div>
 
- 						<li class="flow-text" id="phone">
- 							<a class="grey-text text-lighten-3" href="tel:7975437078">+91 797-543-7078</a>
- 						</li>
- 					</ul>
- 				</div>
- 			</div>
- 		</div>
- 		<div class="footer-copyright center z-depth-5">
- 			<div class="container">
- 				© 2020, Memento Classes. All rights reserved
- 			</div>
- 		</div>
- 	</footer>
+					</div>
+					<!-- TODO: row- 5 -->
+					<div class="row">
+						<div class="col l4" style=" padding-left: 50px;"></div>
 
- 	<!-- Compiled and minified JavaScript -->
- 	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+						<div class="col l4" style=" padding-left: 50px;">
+							<a class="btn red lighten-5 black-text small_button waves-effect waves-red"
+								onClick="run('#ffebee')" data-clipboard-text="#ffebee">#ffebee <br> red lighten-5</a>
+						</div>
+
+						<div class="col l4" style=" padding-left: 50px;"></div>
+					</div>
+				</div>
+
+				<!-- TODO: Big button -->
+				<div class="col l3" style="padding-top:40px; padding-left:50px;">
+					<a class="btn red waves-effect waves-light big_button" onClick="run('#f44336')"
+						data-clipboard-text="#f44336">
+						#f44336 <br> red
+					</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- TODO: Page - 4 -->
+	<section class="grey lighten-5 scrollspy" id="pink" style="padding-top: 20px;">
+		<h2 class="content_headline pink-text">pink color</h2>
+		<!-- TODO: Header Name -->
+		<div class="row">
+			<div class="row">
+				<div class="col l3">
+					<p class="center pink-text header_name">Darken Color</p>
+				</div>
+				<div class="col l3">
+					<p class="center pink-text header_name">Lighten Color</p>
+				</div>
+				<div class="col l3">
+					<p class="center pink-text header_name">Accent Color</p>
+				</div>
+				<div class="col l3">
+					<p class="center pink-text header_name">Color</p>
+				</div>
+			</div>
+			<!-- TODO: Sub-Header Name -->
+			<div class="row">
+				<div class="col l9">
+					<!-- TODO: row- 1 -->
+					<div class="row">
+						<div class="col l4" style=" padding-left: 50px;">
+							<a class="btn pink darken-1 waves-effect waves-dark white-text small_button"
+								onClick="run('#d81b60')" data-clipboard-text="#d81b60">#d81b60 <br> pink darken-1</a>
+						</div>
+
+						<div class="col l4" style=" padding-left: 50px;">
+							<a class="btn pink lighten-1  waves-effect waves-dark  white-text small_button"
+								onClick="run('#ec407a')" data-clipboard-text="#ec407a">#ec407a <br> pink lighten-1</a>
+						</div>
+
+						<div class="col l4" style=" padding-left: 50px;">
+							<a class="btn pink accent-1 waves-effect waves-dark white-text small_button"
+								onClick="run('#ff80ab')" data-clipboard-text="#ff80ab">#ff80ab <br> pink accent-1</a>
+						</div>
+
+					</div>
+
+					<!-- TODO: row- 2 -->
+					<div class="row">
+						<div class="col l4" style=" padding-left: 50px;">
+							<a class="btn pink darken-2 white-text waves-effect waves-dark small_button"
+								onClick="run('#c2185b')" data-clipboard-text="#c2185b">#c2185b <br> pink darken-2</a>
+						</div>
+						<div class="col l4" style="padding-left: 50px;">
+							<a class="btn pink lighten-2 white-text waves-effect waves-dark small_button"
+								onClick="run('#f06292')" data-clipboard-text="#f06292">#f06292 <br> pink lighten-2</a>
+						</div>
+						<div class="col l4" style=" padding-left: 50px;">
+							<a class="btn pink accent-2 white-text waves-effect waves-dark small_button"
+								onClick="run('#ff4081')" data-clipboard-text="#ff4081">#ff4081 <br> pink accent-2</a>
+						</div>
+
+					</div>
+					<!-- TODO: row- 3 -->
+					<div class="row">
+						<div class="col l4" style="padding-left: 50px;">
+							<a class="btn pink darken-3 waves-effect waves-dark white-text small_button"
+								onClick="run('#ad1457')" data-clipboard-text="#ad1457">#ad1457 <br> pink darken-3</a>
+						</div>
+
+						<div class="col l4" style="padding-left: 50px;">
+							<a class="btn pink lighten-3 waves-effect waves-dark white-text small_button"
+								onClick="run('#f48fb1')" data-clipboard-text="#f48fb1">#f48fb1 <br> pink lighten-3</a>
+						</div>
+
+						<div class="col l4" style="padding-left: 50px;">
+							<a class="btn pink accent-3 waves-effect waves-dark white-text small_button"
+								onClick="run('#f50057')" data-clipboard-text="#f50057">#f50057 <br> pink accent-3</a>
+						</div>
+
+					</div>
+					<!-- TODO: row- 4 -->
+					<div class="row">
+						<div class="col l4" style=" padding-left: 50px;">
+							<a class="btn pink darken-4 white-text waves-effect waves-light small_button"
+								onClick="run('#880e4f')" data-clipboard-text="#880e4f">#880e4f <br> pink darken-4</a>
+						</div>
+
+						<div class="col l4" style=" padding-left: 50px;">
+							<a class="btn pink lighten-4 black-text waves-effect waves-red small_button"
+								onClick="run('#f8bbd0')" data-clipboard-text="#f8bbd0">#f8bbd0 <br> pink lighten-4</a>
+						</div>
+
+						<div class="col l4" style="padding-left: 50px;">
+							<a class="btn pink accent-4 white-text waves-effect waves-light small_button"
+								onClick="run('#c51162')" data-clipboard-text="#c51162">#c51162 <br> pink accent-4</a>
+						</div>
+
+					</div>
+					<!-- TODO: row- 5 -->
+					<div class="row">
+						<div class="col l4" style=" padding-left: 50px;"></div>
+
+						<div class="col l4" style=" padding-left: 50px;">
+							<a class="btn pink lighten-5 black-text small_button waves-effect waves-red"
+								onClick="run('#fce4ec')" data-clipboard-text="#fce4ec">#fce4ec <br> pink lighten-5</a>
+						</div>
+
+						<div class="col l4" style=" padding-left: 50px;"></div>
+					</div>
+				</div>
+				<!-- TODO: Big button -->
+				<div class="col l3" style="padding-top:40px; padding-left:50px;">
+					<a class="btn pink waves-effect waves-light big_button" onClick="run('#e91e63')"
+						data-clipboard-text="#e91e63">
+						#e91e63 <br> pink
+					</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- TODO: Page - 5 -->
+	<div id="purple">
+		<section class="grey lighten-4 scrollspy" style="padding-top: 20px;">
+			<h2 class="content_headline purple-text">purple color</h2>
+			<!-- TODO: Header Name -->
+			<div class="row">
+				<div class="row">
+					<div class="col l3">
+						<p class="center purple-text header_name">Darken Color</p>
+					</div>
+					<div class="col l3">
+						<p class="center purple-text header_name">Lighten Color</p>
+					</div>
+					<div class="col l3">
+						<p class="center purple-text header_name">Accent Color</p>
+					</div>
+					<div class="col l3">
+						<p class="center purple-text header_name">Color</p>
+					</div>
+				</div>
+				<!-- TODO: Sub-Header Name -->
+				<div class="row">
+					<div class="col l9">
+						<!-- TODO: row- 1 -->
+						<div class="row">
+							<div class="col l4" style=" padding-left: 50px;">
+								<a class="btn purple darken-1 waves-effect waves-dark white-text small_button"
+									onClick="run('#8e24aa')" data-clipboard-text="#8e24aa">#8e24aa <br> purple
+									darken-1</a>
+							</div>
+
+							<div class="col l4" style=" padding-left: 50px;">
+								<a class="btn purple lighten-1  waves-effect waves-dark  white-text small_button"
+									onClick="run('#ab47bc')" data-clipboard-text="#ab47bc">#ab47bc <br> purple
+									lighten-1</a>
+							</div>
+
+							<div class="col l4" style=" padding-left: 50px;">
+								<a class="btn purple accent-1 waves-effect waves-dark white-text small_button"
+									onClick="run('#ea80fc')" data-clipboard-text="#ea80fc">#ea80fc <br> purple
+									accent-1</a>
+							</div>
+
+						</div>
+
+						<!-- TODO: row- 2 -->
+						<div class="row">
+							<div class="col l4" style=" padding-left: 50px;">
+								<a class="btn purple darken-2 white-text waves-effect waves-dark small_button"
+									onClick="run('#7b1fa2')" data-clipboard-text="#7b1fa2">#7b1fa2 <br> purple
+									darken-2</a>
+							</div>
+							<div class="col l4" style="padding-left: 50px;">
+								<a class="btn purple lighten-2 white-text waves-effect waves-dark small_button"
+									onClick="run('#ba68c8')" data-clipboard-text="#ba68c8">#ba68c8 <br> purple
+									lighten-2</a>
+							</div>
+							<div class="col l4" style=" padding-left: 50px;">
+								<a class="btn purple accent-2 white-text waves-effect waves-dark small_button"
+									onClick="run('#e040fb')" data-clipboard-text="#e040fb">#e040fb <br> purple
+									accent-2</a>
+							</div>
+
+						</div>
+						<!-- TODO: row- 3 -->
+						<div class="row">
+							<div class="col l4" style="padding-left: 50px;">
+								<a class="btn purple darken-3 waves-effect waves-dark white-text small_button"
+									onClick="run('#6a1b9a')" data-clipboard-text="#6a1b9a">#6a1b9a <br> purple
+									darken-3</a>
+							</div>
+
+							<div class="col l4" style="padding-left: 50px;">
+								<a class="btn purple lighten-3 waves-effect waves-dark white-text small_button"
+									onClick="run('#ce93d8')" data-clipboard-text="#ce93d8">#ce93d8 <br> purple
+									lighten-3</a>
+							</div>
+
+							<div class="col l4" style="padding-left: 50px;">
+								<a class="btn purple accent-3 waves-effect waves-dark white-text small_button"
+									onClick="run('#d500f9')" data-clipboard-text="#d500f9">#d500f9 <br> purple
+									accent-3</a>
+							</div>
+
+						</div>
+						<!-- TODO: row- 4 -->
+						<div class="row">
+							<div class="col l4" style=" padding-left: 50px;">
+								<a class="btn purple darken-4 white-text waves-effect waves-light small_button"
+									onClick="run('#4a148c')" data-clipboard-text="#4a148c">#4a148c <br> purple
+									darken-4</a>
+							</div>
+
+							<div class="col l4" style=" padding-left: 50px;">
+								<a class="btn purple lighten-4 black-text waves-effect waves-red small_button"
+									onClick="run('#e1bee7')" data-clipboard-text="#e1bee7">#e1bee7 <br> purple
+									lighten-4</a>
+							</div>
+
+							<div class="col l4" style="padding-left: 50px;">
+								<a class="btn purple accent-4 white-text waves-effect waves-light small_button"
+									onClick="run('#aa00ff')" data-clipboard-text="#aa00ff">#aa00ff <br> purple
+									accent-4</a>
+							</div>
+
+						</div>
+						<!-- TODO: row- 5 -->
+						<div class="row">
+							<div class="col l4" style=" padding-left: 50px;"></div>
+
+							<div class="col l4" style=" padding-left: 50px;">
+								<a class="btn purple lighten-5 black-text small_button waves-effect waves-red"
+									onClick="run('#f3e5f5')" data-clipboard-text="#f3e5f5">#f3e5f5 <br> purple
+									lighten-5</a>
+							</div>
+
+							<div class="col l4" style=" padding-left: 50px;"></div>
+						</div>
+					</div>
+					<!-- TODO: Big button -->
+					<div class="col l3" style="padding-top:40px; padding-left:50px;">
+						<a class="btn purple waves-effect waves-light big_button" onClick="run('#9c27b0')"
+							data-clipboard-text="#9c27b0">
+							#9c27b0 <br> purple
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
 
 
- 	<script>
- 		//TODO: Api
- 		var channelId = 'UC54U2rosp_K1TAoykulHmDQ';
- 		var maxNumber = 8;
- 		var width = 500;
- 		var height = 310;
- 		$(document).ready(function () {
- 			$.get(
- 				"https://www.googleapis.com/youtube/v3/channels", {
- 					part: 'contentDetails',
- 					id: channelId,
- 					key: 'AIzaSyAtukxB87BaiysVOFiUDJx6Ec9UxLCi6TA'
- 				},
- 				function (data) {
- 					$.each(data.items, function (i, item) {
- 						// console.log(item);
- 						pid = item.contentDetails.relatedPlaylists.uploads;
- 						getVids(pid);
- 					})
- 				}
- 			);
+	<!-- TODO: Page - 6 -->
+	<div id="deep-purple">
+		<section class="grey lighten-5 scrollspy" style="padding-top: 20px;">
+			<h2 class="content_headline deep-purple-text">deep purple</h2>
+			<!-- TODO: Header Name -->
+			<div class="row">
+				<div class="row">
+					<div class="col l3">
+						<p class="center deep-purple-text header_name">Darken Color</p>
+					</div>
+					<div class="col l3">
+						<p class="center deep-purple-text header_name">Lighten Color</p>
+					</div>
+					<div class="col l3">
+						<p class="center deep-purple-text header_name">Accent Color</p>
+					</div>
+					<div class="col l3">
+						<p class="center deep-purple-text header_name">Color</p>
+					</div>
+				</div>
+				<!-- TODO: Sub-Header Name -->
+				<div class="row">
+					<div class="col l9">
+						<!-- TODO: row- 1 -->
+						<div class="row">
+							<div class="col l4" style=" padding-left: 50px;">
+								<a class="btn deep-purple darken-1 waves-effect waves-dark white-text small_button"
+									onClick="run('#5e35b1')" data-clipboard-text="#5e35b1">#5e35b1 <br> deep-purple
+									darken-1</a>
+							</div>
 
- 			function getVids(pid) {
- 				$.get(
- 					"https://www.googleapis.com/youtube/v3/playlistItems", {
- 						part: 'snippet',
- 						playlistId: pid,
- 						maxResults: maxNumber,
- 						key: 'AIzaSyAtukxB87BaiysVOFiUDJx6Ec9UxLCi6TA'
- 					},
- 					function (data) {
- 						var output;
- 						$.each(data.items, function (i, item) {
- 							// console.log(item);
- 							videoTitle = item.snippet.title;
- 							videoId = item.snippet.resourceId.videoId;
- 							output = '<iframe width=' + width + ' height=' + height +
- 								' src=\"//www.youtube.com/embed/' + videoId +
- 								'\"frameborder=\"1\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>';
+							<div class="col l4" style=" padding-left: 50px;">
+								<a class="btn deep-purple lighten-1  waves-effect waves-dark  white-text small_button"
+									onClick="run('#7e57c2')" data-clipboard-text="#7e57c2">#7e57c2 <br> deep-purple
+									lighten-1</a>
+							</div>
 
- 							//TODO: Append to results listStyleType
- 							$('#demo').append(output);
- 						})
- 					}
- 				);
- 			}
- 			// TODO: MaterializeCSS
- 			$('.tap-target').tapTarget();
- 			$('.fixed-action-btn').floatingActionButton({
- 				toolbarEnabled: 'true'
- 			});
- 			$('.modal').modal();
- 			$('.sidenav').sidenav();
- 			$('.chips').chips();
- 			$('.scrollspy').scrollSpy();
- 			if (sessionStorage.getItem('#dialog') !== 'true') {
- 				$('#dialog').dialog({
- 					// title:"Auto Close Window",
- 					width: 640,
- 					height: 470,
- 					open: function () {
- 						setTimeout(function () {
- 							$('#dialog').dialog("close");
- 						}, 4000);
- 					}
- 				});
- 				// js code to show one time pop up
- 				sessionStorage.setItem('#dialog', 'true');
- 			}
- 		});
- 	</script>
- 	<!-- TODO: Typed.js -->
- 	<script src="typed.js"></script>
- 	<script>
- 		var typed = new Typed('.type', {
- 			strings: ['Web Development!', 'App Development!', 'Database Management!', 'Desktop App Development!'],
- 			typeSpeed: 40, // Default value
- 			backSpeed: 60, // Default value
- 			loop: true
- 		});
- 		var typed = new Typed('.type1', {
- 			strings: ['Photoshop!', 'UI / UX!', 'Web Design Tools!', 'Web Hosting!'],
- 			typeSpeed: 40, // Default value
- 			backSpeed: 60, // Default value
- 			loop: true
- 		});
- 	</script>
- </body>
+							<div class="col l4" style=" padding-left: 50px;">
+								<a class="btn deep-purple accent-1 waves-effect waves-dark white-text small_button"
+									onClick="run('#b388ff')" data-clipboard-text="#b388ff">#b388ff <br> deep-purple
+									accent-1</a>
+							</div>
 
- </html>
+						</div>
+
+						<!-- TODO: row- 2 -->
+						<div class="row">
+							<div class="col l4" style=" padding-left: 50px;">
+								<a class="btn deep-purple darken-2 white-text waves-effect waves-dark small_button"
+									onClick="run('#512da8')" data-clipboard-text="#512da8">#512da8 <br> deep-purple
+									darken-2</a>
+							</div>
+							<div class="col l4" style="padding-left: 50px;">
+								<a class="btn deep-purple lighten-2 white-text waves-effect waves-dark small_button"
+									onClick="run('#9575cd')" data-clipboard-text="#9575cd">#9575cd <br> deep-purple
+									lighten-2</a>
+							</div>
+							<div class="col l4" style=" padding-left: 50px;">
+								<a class="btn deep-purple accent-2 white-text waves-effect waves-dark small_button"
+									onClick="run('#7c4dff')" data-clipboard-text="#7c4dff">#7c4dff <br> deep-purple
+									accent-2</a>
+							</div>
+
+						</div>
+						<!-- TODO: row- 3 -->
+						<div class="row">
+							<div class="col l4" style="padding-left: 50px;">
+								<a class="btn deep-purple darken-3 waves-effect waves-dark white-text small_button"
+									onClick="run('#4527a0')" data-clipboard-text="#4527a0">#4527a0 <br> deep-purple
+									darken-3</a>
+							</div>
+
+							<div class="col l4" style="padding-left: 50px;">
+								<a class="btn deep-purple lighten-3 waves-effect waves-dark white-text small_button"
+									onClick="run('#b39ddb')" data-clipboard-text="#b39ddb">#b39ddb <br> deep-purple
+									lighten-3</a>
+							</div>
+
+							<div class="col l4" style="padding-left: 50px;">
+								<a class="btn deep-purple accent-3 waves-effect waves-dark white-text small_button"
+									onClick="run('#651fff')" data-clipboard-text="#651fff">#651fff <br> deep-purple
+									accent-3</a>
+							</div>
+
+						</div>
+						<!-- TODO: row- 4 -->
+						<div class="row">
+							<div class="col l4" style=" padding-left: 50px;">
+								<a class="btn deep-purple darken-4 white-text waves-effect waves-light small_button"
+									onClick="run('#311b92')" data-clipboard-text="#311b92">#311b92 <br> deep-purple
+									darken-4</a>
+							</div>
+
+							<div class="col l4" style=" padding-left: 50px;">
+								<a class="btn deep-purple lighten-4 black-text waves-effect waves-red small_button"
+									onClick="run('#d1c4e9')" data-clipboard-text="#d1c4e9">#d1c4e9 <br> deep-purple
+									lighten-4</a>
+							</div>
+
+							<div class="col l4" style="padding-left: 50px;">
+								<a class="btn deep-purple accent-4 white-text waves-effect waves-light small_button"
+									onClick="run('#6200ea')" data-clipboard-text="#6200ea">#6200ea <br> deep-purple
+									accent-4</a>
+							</div>
+
+						</div>
+						<!-- TODO: row- 5 -->
+						<div class="row">
+							<div class="col l4" style=" padding-left: 50px;"></div>
+
+							<div class="col l4" style=" padding-left: 50px;">
+								<a class="btn deep-purple lighten-5 black-text small_button waves-effect waves-red"
+									onClick="run('#ede7f6')" data-clipboard-text="#ede7f6">#ede7f6 <br> deep-purple
+									lighten-5</a>
+							</div>
+
+							<div class="col l4" style=" padding-left: 50px;"></div>
+						</div>
+					</div>
+					<!-- TODO: Big button -->
+					<div class="col l3" style="padding-top:40px; padding-left:50px;">
+						<a class="btn deep-purple waves-effect waves-light big_button" onClick="run('#673ab7')"
+							data-clipboard-text="#673ab7">
+							#673ab7 <br> deep-purple
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+
+	<!-- TODO: Page - 7 -->
+	<section class="grey lighten-4 scrollspy" id="indigo" style="padding-top: 20px;">
+		<h2 class="content_headline indigo-text">indigo color</h2>
+		<!-- TODO: Header Name -->
+		<div class="row">
+			<div class="row">
+				<div class="col l3">
+					<p class="center indigo-text header_name">Darken Color</p>
+				</div>
+				<div class="col l3">
+					<p class="center indigo-text header_name">Lighten Color</p>
+				</div>
+				<div class="col l3">
+					<p class="center indigo-text header_name">Accent Color</p>
+				</div>
+				<div class="col l3">
+					<p class="center indigo-text header_name">Color</p>
+				</div>
+			</div>
+			<!-- TODO: Sub-Header Name -->
+			<div class="row">
+				<div class="col l9">
+					<!-- TODO: row- 1 -->
+					<div class="row">
+						<div class="col l4" style=" padding-left: 50px;">
+							<a class="btn indigo darken-1 waves-effect waves-dark white-text small_button"
+								onClick="run('#3949ab')" data-clipboard-text="#3949ab">#3949ab <br> indigo
+								darken-1</a>
+						</div>
+
+						<div class="col l4" style=" padding-left: 50px;">
+							<a class="btn indigo lighten-1  waves-effect waves-dark  white-text small_button"
+								onClick="run('#5c6bc0')" data-clipboard-text="#5c6bc0">#5c6bc0 <br> indigo
+								lighten-1</a>
+						</div>
+
+						<div class="col l4" style=" padding-left: 50px;">
+							<a class="btn indigo accent-1 waves-effect waves-dark white-text small_button"
+								onClick="run('#8c9eff')" data-clipboard-text="#8c9eff">#8c9eff <br> indigo
+								accent-1</a>
+						</div>
+
+					</div>
+
+					<!-- TODO: row- 2 -->
+					<div class="row">
+						<div class="col l4" style=" padding-left: 50px;">
+							<a class="btn indigo darken-2 white-text waves-effect waves-dark small_button"
+								onClick="run('#303f9f')" data-clipboard-text="#303f9f">#303f9f <br> indigo
+								darken-2</a>
+						</div>
+						<div class="col l4" style="padding-left: 50px;">
+							<a class="btn indigo lighten-2 white-text waves-effect waves-dark small_button"
+								onClick="run('#7986cb')" data-clipboard-text="#7986cb">#7986cb <br> indigo
+								lighten-2</a>
+						</div>
+						<div class="col l4" style=" padding-left: 50px;">
+							<a class="btn indigo accent-2 white-text waves-effect waves-dark small_button"
+								onClick="run('#536dfe')" data-clipboard-text="#536dfe">#536dfe <br> indigo
+								accent-2</a>
+						</div>
+
+					</div>
+					<!-- TODO: row- 3 -->
+					<div class="row">
+						<div class="col l4" style="padding-left: 50px;">
+							<a class="btn indigo darken-3 waves-effect waves-dark white-text small_button"
+								onClick="run('#283593')" data-clipboard-text="#283593">#283593 <br> indigo
+								darken-3</a>
+						</div>
+
+						<div class="col l4" style="padding-left: 50px;">
+							<a class="btn indigo lighten-3 waves-effect waves-dark white-text small_button"
+								onClick="run('#9fa8da')" data-clipboard-text="#9fa8da">#9fa8da <br> indigo
+								lighten-3</a>
+						</div>
+
+						<div class="col l4" style="padding-left: 50px;">
+							<a class="btn indigo accent-3 waves-effect waves-dark white-text small_button"
+								onClick="run('#3d5afe')" data-clipboard-text="#3d5afe">#3d5afe <br> indigo
+								accent-3</a>
+						</div>
+
+					</div>
+					<!-- TODO: row- 4 -->
+					<div class="row">
+						<div class="col l4" style=" padding-left: 50px;">
+							<a class="btn indigo darken-4 white-text waves-effect waves-light small_button"
+								onClick="run('#1a237e')" data-clipboard-text="#1a237e">#1a237e <br> indigo
+								darken-4</a>
+						</div>
+
+						<div class="col l4" style=" padding-left: 50px;">
+							<a class="btn indigo lighten-4 black-text waves-effect waves-red small_button"
+								onClick="run('#c5cae9')" data-clipboard-text="#c5cae9">#c5cae9 <br> indigo
+								lighten-4</a>
+						</div>
+
+						<div class="col l4" style="padding-left: 50px;">
+							<a class="btn indigo accent-4 white-text waves-effect waves-light small_button"
+								onClick="run('#304ffe')" data-clipboard-text="#304ffe">#304ffe <br> indigo
+								accent-4</a>
+						</div>
+
+					</div>
+					<!-- TODO: row- 5 -->
+					<div class="row">
+						<div class="col l4" style=" padding-left: 50px;"></div>
+
+						<div class="col l4" style=" padding-left: 50px;">
+							<a class="btn indigo lighten-5 black-text small_button waves-effect waves-red"
+								onClick="run('#e8eaf6')" data-clipboard-text="#e8eaf6">#e8eaf6 <br> indigo
+								lighten-5</a>
+						</div>
+
+						<div class="col l4" style=" padding-left: 50px;"></div>
+					</div>
+				</div>
+				<!-- TODO: Big button -->
+				<div class="col l3" style="padding-top:40px; padding-left:50px;">
+					<a class="btn indigo waves-effect waves-light big_button" onClick="run('#673ab7')"
+						data-clipboard-text="#673ab7">
+						#3f51b5 <br> indigo
+					</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- TODO: Page - 8 -->
+	<div id="blue">
+		<section class="grey lighten-5 scrollspy" style="padding-top: 20px;">
+			<h2 class="content_headline blue-text">blue color</h2>
+			<!-- TODO: Header Name -->
+			<div class="row">
+				<div class="row">
+					<div class="col l3">
+						<p class="center blue-text header_name">Darken Color</p>
+					</div>
+					<div class="col l3">
+						<p class="center blue-text header_name">Lighten Color</p>
+					</div>
+					<div class="col l3">
+						<p class="center blue-text header_name">Accent Color</p>
+					</div>
+					<div class="col l3">
+						<p class="center blue-text header_name">Color</p>
+					</div>
+				</div>
+				<!-- TODO: Sub-Header Name -->
+				<div class="row">
+					<div class="col l9">
+						<!-- TODO: row- 1 -->
+						<div class="row">
+							<div class="col l4" style=" padding-left: 50px;">
+								<a class="btn blue darken-1 waves-effect waves-dark white-text small_button"
+									onClick="run('#1e88e5')" data-clipboard-text="#1e88e5">#1e88e5 <br> blue
+									darken-1</a>
+							</div>
+
+							<div class="col l4" style=" padding-left: 50px;">
+								<a class="btn blue lighten-1  waves-effect waves-dark  white-text small_button"
+									onClick="run('#42a5f5')" data-clipboard-text="#42a5f5">#42a5f5 <br> blue
+									lighten-1</a>
+							</div>
+
+							<div class="col l4" style=" padding-left: 50px;">
+								<a class="btn blue accent-1 waves-effect waves-dark white-text small_button"
+									onClick="run('#82b1ff')" data-clipboard-text="#82b1ff">#82b1ff <br> blue
+									accent-1</a>
+							</div>
+
+						</div>
+
+						<!-- TODO: row- 2 -->
+						<div class="row">
+							<div class="col l4" style=" padding-left: 50px;">
+								<a class="btn blue darken-2 white-text waves-effect waves-dark small_button"
+									onClick="run('#1976d2')" data-clipboard-text="#1976d2">#1976d2 <br> blue
+									darken-2</a>
+							</div>
+							<div class="col l4" style="padding-left: 50px;">
+								<a class="btn blue lighten-2 white-text waves-effect waves-dark small_button"
+									onClick="run('#64b5f6')" data-clipboard-text="#64b5f6">#64b5f6 <br> blue
+									lighten-2</a>
+							</div>
+							<div class="col l4" style=" padding-left: 50px;">
+								<a class="btn blue accent-2 white-text waves-effect waves-dark small_button"
+									onClick="run('#448aff')" data-clipboard-text="#448aff">#448aff <br> blue
+									accent-2</a>
+							</div>
+
+						</div>
+						<!-- TODO: row- 3 -->
+						<div class="row">
+							<div class="col l4" style="padding-left: 50px;">
+								<a class="btn blue darken-3 waves-effect waves-dark white-text small_button"
+									onClick="run('#1565c0')" data-clipboard-text="#1565c0">#1565c0 <br> blue
+									darken-3</a>
+							</div>
+
+							<div class="col l4" style="padding-left: 50px;">
+								<a class="btn blue lighten-3 waves-effect waves-dark white-text small_button"
+									onClick="run('#90caf9')" data-clipboard-text="#90caf9">#90caf9 <br> blue
+									lighten-3</a>
+							</div>
+
+							<div class="col l4" style="padding-left: 50px;">
+								<a class="btn blue accent-3 waves-effect waves-dark white-text small_button"
+									onClick="run('#2979ff')" data-clipboard-text="#2979ff">#2979ff <br> blue
+									accent-3</a>
+							</div>
+
+						</div>
+						<!-- TODO: row- 4 -->
+						<div class="row">
+							<div class="col l4" style=" padding-left: 50px;">
+								<a class="btn blue darken-4 white-text waves-effect waves-light small_button"
+									onClick="run('#0d47a1')" data-clipboard-text="#0d47a1">#0d47a1 <br> blue
+									darken-4</a>
+							</div>
+
+							<div class="col l4" style=" padding-left: 50px;">
+								<a class="btn blue lighten-4 black-text waves-effect waves-red small_button"
+									onClick="run('#bbdefb')" data-clipboard-text="#bbdefb">#bbdefb <br> blue
+									lighten-4</a>
+							</div>
+
+							<div class="col l4" style="padding-left: 50px;">
+								<a class="btn blue accent-4 white-text waves-effect waves-light small_button"
+									onClick="run('#2962ff')" data-clipboard-text="#2962ff">#2962ff <br> blue
+									accent-4</a>
+							</div>
+
+						</div>
+						<!-- TODO: row- 5 -->
+						<div class="row">
+							<div class="col l4" style=" padding-left: 50px;"></div>
+
+							<div class="col l4" style=" padding-left: 50px;">
+								<a class="btn blue lighten-5 black-text small_button waves-effect waves-red"
+									onClick="run('#e3f2fd')" data-clipboard-text="#e3f2fd">#e3f2fd <br> blue
+									lighten-5</a>
+							</div>
+
+							<div class="col l4" style=" padding-left: 50px;"></div>
+						</div>
+					</div>
+					<!-- TODO: Big button -->
+					<div class="col l3" style="padding-top:40px; padding-left:50px;">
+						<a class="btn blue waves-effect waves-light big_button" onClick="run('#673ab7')"
+							data-clipboard-text="#673ab7">
+							#2196f3 <br> blue
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+
+
+	<!-- TODO: Page - 9 -->
+	<div id="light-blue">
+		<section class="grey lighten-4 scrollspy" style="padding-top: 20px;">
+			<h2 class="content_headline light-blue-text">light-blue color</h2>
+			<!-- TODO: Header Name -->
+			<div class="row">
+				<div class="row">
+					<div class="col l3">
+						<p class="center light-blue-text header_name">Darken Color</p>
+					</div>
+					<div class="col l3">
+						<p class="center light-blue-text header_name">Lighten Color</p>
+					</div>
+					<div class="col l3">
+						<p class="center light-blue-text header_name">Accent Color</p>
+					</div>
+					<div class="col l3">
+						<p class="center light-blue-text header_name">Color</p>
+					</div>
+				</div>
+				<!-- TODO: Sub-Header Name -->
+				<div class="row">
+					<div class="col l9">
+						<!-- TODO: row- 1 -->
+						<div class="row">
+							<div class="col l4" style=" padding-left: 50px;">
+								<a class="btn light-blue darken-1 waves-effect waves-dark white-text small_button"
+									onClick="run('#039be5')" data-clipboard-text="#039be5">#039be5 <br> light-blue
+									darken-1</a>
+							</div>
+
+							<div class="col l4" style=" padding-left: 50px;">
+								<a class="btn light-blue lighten-1  waves-effect waves-dark  white-text small_button"
+									onClick="run('#29b6f6')" data-clipboard-text="#29b6f6">#29b6f6 <br> light-blue
+									lighten-1</a>
+							</div>
+
+							<div class="col l4" style=" padding-left: 50px;">
+								<a class="btn light-blue accent-1 waves-effect waves-dark white-text small_button"
+									onClick="run('#80d8ff')" data-clipboard-text="#80d8ff">#80d8ff <br> light-blue
+									accent-1</a>
+							</div>
+
+						</div>
+
+						<!-- TODO: row- 2 -->
+						<div class="row">
+							<div class="col l4" style=" padding-left: 50px;">
+								<a class="btn light-blue darken-2 white-text waves-effect waves-dark small_button"
+									onClick="run('#0288d1')" data-clipboard-text="#0288d1">#0288d1 <br> light-blue
+									darken-2</a>
+							</div>
+							<div class="col l4" style="padding-left: 50px;">
+								<a class="btn light-blue lighten-2 white-text waves-effect waves-dark small_button"
+									onClick="run('#4fc3f7')" data-clipboard-text="#4fc3f7">#4fc3f7 <br> light-blue
+									lighten-2</a>
+							</div>
+							<div class="col l4" style=" padding-left: 50px;">
+								<a class="btn light-blue accent-2 white-text waves-effect waves-dark small_button"
+									onClick="run('#40c4ff')" data-clipboard-text="#40c4ff">#40c4ff <br> light-blue
+									accent-2</a>
+							</div>
+
+						</div>
+						<!-- TODO: row- 3 -->
+						<div class="row">
+							<div class="col l4" style="padding-left: 50px;">
+								<a class="btn light-blue darken-3 waves-effect waves-dark white-text small_button"
+									onClick="run('#0277bd')" data-clipboard-text="#0277bd">#0277bd <br> light-blue
+									darken-3</a>
+							</div>
+
+							<div class="col l4" style="padding-left: 50px;">
+								<a class="btn light-blue lighten-3 waves-effect waves-dark white-text small_button"
+									onClick="run('#81d4fa')" data-clipboard-text="#81d4fa">#81d4fa <br> light-blue
+									lighten-3</a>
+							</div>
+
+							<div class="col l4" style="padding-left: 50px;">
+								<a class="btn light-blue accent-3 waves-effect waves-dark white-text small_button"
+									onClick="run('#00b0ff')" data-clipboard-text="#00b0ff">#00b0ff <br> light-blue
+									accent-3</a>
+							</div>
+
+						</div>
+						<!-- TODO: row- 4 -->
+						<div class="row">
+							<div class="col l4" style=" padding-left: 50px;">
+								<a class="btn light-blue darken-4 white-text waves-effect waves-light small_button"
+									onClick="run('#01579b')" data-clipboard-text="#01579b">#01579b <br> light-blue
+									darken-4</a>
+							</div>
+
+							<div class="col l4" style=" padding-left: 50px;">
+								<a class="btn light-blue lighten-4 black-text waves-effect waves-red small_button"
+									onClick="run('#b3e5fc')" data-clipboard-text="#b3e5fc">#b3e5fc <br> light-blue
+									lighten-4</a>
+							</div>
+
+							<div class="col l4" style="padding-left: 50px;">
+								<a class="btn light-blue accent-4 white-text waves-effect waves-light small_button"
+									onClick="run('#0091ea')" data-clipboard-text="#0091ea">#0091ea <br> light-blue
+									accent-4</a>
+							</div>
+
+						</div>
+						<!-- TODO: row- 5 -->
+						<div class="row">
+							<div class="col l4" style=" padding-left: 50px;"></div>
+
+							<div class="col l4" style=" padding-left: 50px;">
+								<a class="btn light-blue lighten-5 black-text small_button waves-effect waves-red"
+									onClick="run('#e1f5fe')" data-clipboard-text="#e1f5fe">#e1f5fe <br> light-blue
+									lighten-5</a>
+							</div>
+
+							<div class="col l4" style=" padding-left: 50px;"></div>
+						</div>
+					</div>
+					<!-- TODO: Big button -->
+					<div class="col l3" style="padding-top:40px; padding-left:50px;">
+						<a class="btn light-blue waves-effect waves-light big_button" onClick="run('#03a9f4')"
+							data-clipboard-text="#03a9f4">
+							#03a9f4 <br> light-blue
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+
+	<!-- TODO: Page - 10 -->
+	<section class="grey lighten-5 scrollspy" id="cyan" style="padding-top: 20px;">
+		<h2 class="content_headline cyan-text">cyan color</h2>
+		<!-- TODO: Header Name -->
+		<div class="row">
+			<div class="row">
+				<div class="col l3">
+					<p class="center cyan-text header_name">Darken Color</p>
+				</div>
+				<div class="col l3">
+					<p class="center cyan-text header_name">Lighten Color</p>
+				</div>
+				<div class="col l3">
+					<p class="center cyan-text header_name">Accent Color</p>
+				</div>
+				<div class="col l3">
+					<p class="center cyan-text header_name">Color</p>
+				</div>
+			</div>
+			<!-- TODO: Sub-Header Name -->
+			<div class="row">
+				<div class="col l9">
+					<!-- TODO: row- 1 -->
+					<div class="row">
+						<div class="col l4" style=" padding-left: 50px;">
+							<a class="btn cyan darken-1 waves-effect waves-dark white-text small_button"
+								onClick="run('#00acc1')" data-clipboard-text="#00acc1">#00acc1 <br> cyan
+								darken-1</a>
+						</div>
+
+						<div class="col l4" style=" padding-left: 50px;">
+							<a class="btn cyan lighten-1  waves-effect waves-dark  black-text small_button"
+								onClick="run('#26c6da')" data-clipboard-text="#26c6da">#26c6da <br> cyan
+								lighten-1</a>
+						</div>
+
+						<div class="col l4" style=" padding-left: 50px;">
+							<a class="btn cyan accent-1 waves-effect waves-dark black-text small_button"
+								onClick="run('#84ffff')" data-clipboard-text="#84ffff">#84ffff <br> cyan
+								accent-1</a>
+						</div>
+
+					</div>
+
+					<!-- TODO: row- 2 -->
+					<div class="row">
+						<div class="col l4" style=" padding-left: 50px;">
+							<a class="btn cyan darken-2 white-text waves-effect waves-dark small_button"
+								onClick="run('#0097a7')" data-clipboard-text="#0097a7">#0097a7 <br> cyan
+								darken-2</a>
+						</div>
+						<div class="col l4" style="padding-left: 50px;">
+							<a class="btn cyan lighten-2 black-text waves-effect waves-dark small_button"
+								onClick="run('#4dd0e1')" data-clipboard-text="#4dd0e1">#4dd0e1 <br> cyan
+								lighten-2</a>
+						</div>
+						<div class="col l4" style=" padding-left: 50px;">
+							<a class="btn cyan accent-2 black-text waves-effect waves-dark small_button"
+								onClick="run('#18ffff')" data-clipboard-text="#18ffff">#18ffff <br> cyan
+								accent-2</a>
+						</div>
+
+					</div>
+					<!-- TODO: row- 3 -->
+					<div class="row">
+						<div class="col l4" style="padding-left: 50px;">
+							<a class="btn cyan darken-3 waves-effect waves-dark white-text small_button"
+								onClick="run('#00838f')" data-clipboard-text="#00838f">#00838f <br> cyan
+								darken-3</a>
+						</div>
+
+						<div class="col l4" style="padding-left: 50px;">
+							<a class="btn cyan lighten-3 waves-effect waves-dark black-text small_button"
+								onClick="run('#80deea')" data-clipboard-text="#80deea">#80deea <br> cyan
+								lighten-3</a>
+						</div>
+
+						<div class="col l4" style="padding-left: 50px;">
+							<a class="btn cyan accent-3 waves-effect waves-dark black-text small_button"
+								onClick="run('#00e5ff')" data-clipboard-text="#00e5ff">#00e5ff <br> cyan
+								accent-3</a>
+						</div>
+
+					</div>
+					<!-- TODO: row- 4 -->
+					<div class="row">
+						<div class="col l4" style=" padding-left: 50px;">
+							<a class="btn cyan darken-4 white-text waves-effect waves-light small_button"
+								onClick="run('#006064')" data-clipboard-text="#006064">#006064 <br> cyan
+								darken-4</a>
+						</div>
+
+						<div class="col l4" style=" padding-left: 50px;">
+							<a class="btn cyan lighten-4 black-text waves-effect waves-red small_button"
+								onClick="run('#b2ebf2')" data-clipboard-text="#b2ebf2">#b2ebf2 <br> cyan
+								lighten-4</a>
+						</div>
+
+						<div class="col l4" style="padding-left: 50px;">
+							<a class="btn cyan accent-4 black-text waves-effect waves-light small_button"
+								onClick="run('#00b8d4')" data-clipboard-text="#00b8d4">#00b8d4 <br> cyan
+								accent-4</a>
+						</div>
+
+					</div>
+					<!-- TODO: row- 5 -->
+					<div class="row">
+						<div class="col l4" style=" padding-left: 50px;"></div>
+
+						<div class="col l4" style=" padding-left: 50px;">
+							<a class="btn cyan lighten-5 black-text small_button waves-effect waves-red"
+								onClick="run('#e0f7fa')" data-clipboard-text="#e0f7fa">#e0f7fa <br> cyan
+								lighten-5</a>
+						</div>
+
+						<div class="col l4" style=" padding-left: 50px;"></div>
+					</div>
+				</div>
+				<!-- TODO: Big button -->
+				<div class="col l3" style="padding-top:40px; padding-left:50px;">
+					<a class="btn cyan waves-effect waves-light big_button" onClick="run('#00bcd4')"
+						data-clipboard-text="#00bcd4">
+						#00bcd4 <br> cyan
+					</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- TODO: Page - 11 -->
+	<section class="grey lighten-4 scrollspy" id="teal" style="padding-top: 20px;">
+		<h2 class="content_headline teal-text">teal color</h2>
+		<!-- TODO: Header Name -->
+		<div class="row">
+			<div class="row">
+				<div class="col l3">
+					<p class="center teal-text header_name">Darken Color</p>
+				</div>
+				<div class="col l3">
+					<p class="center teal-text header_name">Lighten Color</p>
+				</div>
+				<div class="col l3">
+					<p class="center teal-text header_name">Accent Color</p>
+				</div>
+				<div class="col l3">
+					<p class="center teal-text header_name">Color</p>
+				</div>
+			</div>
+			<!-- TODO: Sub-Header Name -->
+			<div class="row">
+				<div class="col l9">
+					<!-- TODO: row- 1 -->
+					<div class="row">
+						<div class="col l4" style=" padding-left: 50px;">
+							<a class="btn teal darken-1 waves-effect waves-dark white-text small_button"
+								onClick="run('#00897b')" data-clipboard-text="#00897b">#00897b <br> teal
+								darken-1</a>
+						</div>
+
+						<div class="col l4" style=" padding-left: 50px;">
+							<a class="btn teal lighten-1  waves-effect waves-dark  black-text small_button"
+								onClick="run('#26a69a')" data-clipboard-text="#26a69a">#26a69a <br> teal
+								lighten-1</a>
+						</div>
+
+						<div class="col l4" style=" padding-left: 50px;">
+							<a class="btn teal accent-1 waves-effect waves-dark black-text small_button"
+								onClick="run('#a7ffeb')" data-clipboard-text="#a7ffeb">#a7ffeb <br> teal
+								accent-1</a>
+						</div>
+
+					</div>
+
+					<!-- TODO: row- 2 -->
+					<div class="row">
+						<div class="col l4" style=" padding-left: 50px;">
+							<a class="btn teal darken-2 white-text waves-effect waves-dark small_button"
+								onClick="run('#00796b')" data-clipboard-text="#00796b">#00796b <br> teal
+								darken-2</a>
+						</div>
+						<div class="col l4" style="padding-left: 50px;">
+							<a class="btn teal lighten-2 black-text waves-effect waves-dark small_button"
+								onClick="run('#4db6ac')" data-clipboard-text="#4db6ac">#4db6ac <br> teal
+								lighten-2</a>
+						</div>
+						<div class="col l4" style=" padding-left: 50px;">
+							<a class="btn teal accent-2 black-text waves-effect waves-dark small_button"
+								onClick="run('#64ffda')" data-clipboard-text="#64ffda">#64ffda <br> teal
+								accent-2</a>
+						</div>
+
+					</div>
+					<!-- TODO: row- 3 -->
+					<div class="row">
+						<div class="col l4" style="padding-left: 50px;">
+							<a class="btn teal darken-3 waves-effect waves-dark white-text small_button"
+								onClick="run('#00695c')" data-clipboard-text="#00695c">#00695c <br> teal
+								darken-3</a>
+						</div>
+
+						<div class="col l4" style="padding-left: 50px;">
+							<a class="btn teal lighten-3 waves-effect waves-dark black-text small_button"
+								onClick="run('#80cbc4')" data-clipboard-text="#80cbc4">#80cbc4 <br> teal
+								lighten-3</a>
+						</div>
+
+						<div class="col l4" style="padding-left: 50px;">
+							<a class="btn teal accent-3 waves-effect waves-dark black-text small_button"
+								onClick="run('#1de9b6')" data-clipboard-text="#1de9b6">#1de9b6 <br> teal
+								accent-3</a>
+						</div>
+
+					</div>
+					<!-- TODO: row- 4 -->
+					<div class="row">
+						<div class="col l4" style=" padding-left: 50px;">
+							<a class="btn teal darken-4 white-text waves-effect waves-light small_button"
+								onClick="run('#004d40')" data-clipboard-text="#004d40">#004d40 <br> teal
+								darken-4</a>
+						</div>
+
+						<div class="col l4" style=" padding-left: 50px;">
+							<a class="btn teal lighten-4 black-text waves-effect waves-red small_button"
+								onClick="run('#b2dfdb')" data-clipboard-text="#b2dfdb">#b2dfdb <br> teal
+								lighten-4</a>
+						</div>
+
+						<div class="col l4" style="padding-left: 50px;">
+							<a class="btn teal accent-4 black-text waves-effect waves-light small_button"
+								onClick="run('#00bfa5')" data-clipboard-text="#00bfa5">#00bfa5 <br> teal
+								accent-4</a>
+						</div>
+
+					</div>
+					<!-- TODO: row- 5 -->
+					<div class="row">
+						<div class="col l4" style=" padding-left: 50px;"></div>
+
+						<div class="col l4" style=" padding-left: 50px;">
+							<a class="btn teal lighten-5 black-text small_button waves-effect waves-red"
+								onClick="run('#e0f2f1')" data-clipboard-text="#e0f2f1">#e0f2f1 <br> teal
+								lighten-5</a>
+						</div>
+
+						<div class="col l4" style=" padding-left: 50px;"></div>
+					</div>
+				</div>
+				<!-- TODO: Big button -->
+				<div class="col l3" style="padding-top:40px; padding-left:50px;">
+					<a class="btn teal waves-effect waves-light big_button" onClick="run('#009688')"
+						data-clipboard-text="#009688">
+						#009688 <br> teal
+					</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- TODO: Page - 12 -->
+	<div id="green">
+		<section class="grey lighten-5 scrollspy" style="padding-top: 20px;">
+			<h2 class="content_headline green-text">green color</h2>
+			<!-- TODO: Header Name -->
+			<div class="row">
+				<div class="row">
+					<div class="col l3">
+						<p class="center green-text header_name">Darken Color</p>
+					</div>
+					<div class="col l3">
+						<p class="center green-text header_name">Lighten Color</p>
+					</div>
+					<div class="col l3">
+						<p class="center green-text header_name">Accent Color</p>
+					</div>
+					<div class="col l3">
+						<p class="center green-text header_name">Color</p>
+					</div>
+				</div>
+				<!-- TODO: Sub-Header Name -->
+				<div class="row">
+					<div class="col l9">
+						<!-- TODO: row- 1 -->
+						<div class="row">
+							<div class="col l4" style=" padding-left: 50px;">
+								<a class="btn green darken-1 waves-effect waves-dark white-text small_button"
+									onClick="run('#43a047')" data-clipboard-text="#43a047">#43a047 <br> green
+									darken-1</a>
+							</div>
+
+							<div class="col l4" style=" padding-left: 50px;">
+								<a class="btn green lighten-1  waves-effect waves-dark  black-text small_button"
+									onClick="run('#66bb6a')" data-clipboard-text="#66bb6a">#66bb6a <br> green
+									lighten-1</a>
+							</div>
+
+							<div class="col l4" style=" padding-left: 50px;">
+								<a class="btn green accent-1 waves-effect waves-dark black-text small_button"
+									onClick="run('#b9f6ca')" data-clipboard-text="#b9f6ca">#b9f6ca <br> green
+									accent-1</a>
+							</div>
+
+						</div>
+
+						<!-- TODO: row- 2 -->
+						<div class="row">
+							<div class="col l4" style=" padding-left: 50px;">
+								<a class="btn green darken-2 white-text waves-effect waves-dark small_button"
+									onClick="run('#388e3c')" data-clipboard-text="#388e3c">#388e3c <br> green
+									darken-2</a>
+							</div>
+							<div class="col l4" style="padding-left: 50px;">
+								<a class="btn green lighten-2 black-text waves-effect waves-dark small_button"
+									onClick="run('#81c784')" data-clipboard-text="#81c784">#81c784 <br> green
+									lighten-2</a>
+							</div>
+							<div class="col l4" style=" padding-left: 50px;">
+								<a class="btn green accent-2 black-text waves-effect waves-dark small_button"
+									onClick="run('#69f0ae')" data-clipboard-text="#69f0ae">#69f0ae <br> green
+									accent-2</a>
+							</div>
+
+						</div>
+						<!-- TODO: row- 3 -->
+						<div class="row">
+							<div class="col l4" style="padding-left: 50px;">
+								<a class="btn green darken-3 waves-effect waves-dark white-text small_button"
+									onClick="run('#2e7d32')" data-clipboard-text="#2e7d32">#2e7d32 <br> green
+									darken-3</a>
+							</div>
+
+							<div class="col l4" style="padding-left: 50px;">
+								<a class="btn green lighten-3 waves-effect waves-dark black-text small_button"
+									onClick="run('#a5d6a7')" data-clipboard-text="#a5d6a7">#a5d6a7 <br> green
+									lighten-3</a>
+							</div>
+
+							<div class="col l4" style="padding-left: 50px;">
+								<a class="btn green accent-3 waves-effect waves-dark black-text small_button"
+									onClick="run('#00e676')" data-clipboard-text="#00e676">#00e676 <br> green
+									accent-3</a>
+							</div>
+
+						</div>
+						<!-- TODO: row- 4 -->
+						<div class="row">
+							<div class="col l4" style=" padding-left: 50px;">
+								<a class="btn green darken-4 white-text waves-effect waves-light small_button"
+									onClick="run('#1b5e20')" data-clipboard-text="#1b5e20">#1b5e20 <br> green
+									darken-4</a>
+							</div>
+
+							<div class="col l4" style=" padding-left: 50px;">
+								<a class="btn green lighten-4 black-text waves-effect waves-red small_button"
+									onClick="run('#c8e6c9')" data-clipboard-text="#c8e6c9">#c8e6c9 <br> green
+									lighten-4</a>
+							</div>
+
+							<div class="col l4" style="padding-left: 50px;">
+								<a class="btn green accent-4 black-text waves-effect waves-light small_button"
+									onClick="run('#00c853')" data-clipboard-text="#00c853">#00c853 <br> green
+									accent-4</a>
+							</div>
+
+						</div>
+						<!-- TODO: row- 5 -->
+						<div class="row">
+							<div class="col l4" style=" padding-left: 50px;"></div>
+
+							<div class="col l4" style=" padding-left: 50px;">
+								<a class="btn green lighten-5 black-text small_button waves-effect waves-red"
+									onClick="run('#e8f5e9')" data-clipboard-text="#e8f5e9">#e8f5e9 <br> green
+									lighten-5</a>
+							</div>
+
+							<div class="col l4" style=" padding-left: 50px;"></div>
+						</div>
+					</div>
+					<!-- TODO: Big button -->
+					<div class="col l3" style="padding-top:40px; padding-left:50px;">
+						<a class="btn green waves-effect waves-light big_button" onClick="run('#4caf50')"
+							data-clipboard-text="#4caf50">
+							#4caf50 <br> green
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+
+	<!-- TODO: Page - 13 -->
+	<div id="light-green">
+		<section class="grey lighten-4 scrollspy" style="padding-top: 20px;">
+			<h2 class="content_headline light-green-text">light-green color</h2>
+			<!-- TODO: Header Name -->
+			<div class="row">
+				<div class="row">
+					<div class="col l3">
+						<p class="center light-green-text header_name">Darken Color</p>
+					</div>
+					<div class="col l3">
+						<p class="center light-green-text header_name">Lighten Color</p>
+					</div>
+					<div class="col l3">
+						<p class="center light-green-text header_name">Accent Color</p>
+					</div>
+					<div class="col l3">
+						<p class="center light-green-text header_name">Color</p>
+					</div>
+				</div>
+				<!-- TODO: Sub-Header Name -->
+				<div class="row">
+					<div class="col l9">
+						<!-- TODO: row- 1 -->
+						<div class="row">
+							<div class="col l4" style=" padding-left: 50px;">
+								<a class="btn light-green darken-1 waves-effect waves-dark white-text small_button"
+									onClick="run('#7cb342')" data-clipboard-text="#7cb342">#7cb342 <br> light-green
+									darken-1</a>
+							</div>
+
+							<div class="col l4" style=" padding-left: 50px;">
+								<a class="btn light-green lighten-1  waves-effect waves-dark  black-text small_button"
+									onClick="run('#9ccc65')" data-clipboard-text="#9ccc65">#9ccc65 <br> light-green
+									lighten-1</a>
+							</div>
+
+							<div class="col l4" style=" padding-left: 50px;">
+								<a class="btn light-green accent-1 waves-effect waves-dark black-text small_button"
+									onClick="run('#ccff90')" data-clipboard-text="#ccff90">#ccff90 <br> light-green
+									accent-1</a>
+							</div>
+
+						</div>
+
+						<!-- TODO: row- 2 -->
+						<div class="row">
+							<div class="col l4" style=" padding-left: 50px;">
+								<a class="btn light-green darken-2 white-text waves-effect waves-dark small_button"
+									onClick="run('#689f38')" data-clipboard-text="#689f38">#689f38 <br> light-green
+									darken-2</a>
+							</div>
+							<div class="col l4" style="padding-left: 50px;">
+								<a class="btn light-green lighten-2 black-text waves-effect waves-dark small_button"
+									onClick="run('#aed581')" data-clipboard-text="#aed581">#aed581 <br> light-green
+									lighten-2</a>
+							</div>
+							<div class="col l4" style=" padding-left: 50px;">
+								<a class="btn light-green accent-2 black-text waves-effect waves-dark small_button"
+									onClick="run('#b2ff59')" data-clipboard-text="#b2ff59">#b2ff59 <br> light-green
+									accent-2</a>
+							</div>
+
+						</div>
+						<!-- TODO: row- 3 -->
+						<div class="row">
+							<div class="col l4" style="padding-left: 50px;">
+								<a class="btn light-green darken-3 waves-effect waves-dark white-text small_button"
+									onClick="run('#558b2f')" data-clipboard-text="#558b2f">#558b2f <br> light-green
+									darken-3</a>
+							</div>
+
+							<div class="col l4" style="padding-left: 50px;">
+								<a class="btn light-green lighten-3 waves-effect waves-dark black-text small_button"
+									onClick="run('#c5e1a5')" data-clipboard-text="#c5e1a5">#c5e1a5 <br> light-green
+									lighten-3</a>
+							</div>
+
+							<div class="col l4" style="padding-left: 50px;">
+								<a class="btn light-green accent-3 waves-effect waves-dark black-text small_button"
+									onClick="run('#76ff03')" data-clipboard-text="#76ff03">#76ff03 <br> light-green
+									accent-3</a>
+							</div>
+
+						</div>
+						<!-- TODO: row- 4 -->
+						<div class="row">
+							<div class="col l4" style=" padding-left: 50px;">
+								<a class="btn light-green darken-4 white-text waves-effect waves-light small_button"
+									onClick="run('#33691e')" data-clipboard-text="#33691e">#33691e <br> light-green
+									darken-4</a>
+							</div>
+
+							<div class="col l4" style=" padding-left: 50px;">
+								<a class="btn light-green lighten-4 black-text waves-effect waves-red small_button"
+									onClick="run('#dcedc8')" data-clipboard-text="#dcedc8">#dcedc8 <br> light-green
+									lighten-4</a>
+							</div>
+
+							<div class="col l4" style="padding-left: 50px;">
+								<a class="btn light-green accent-4 black-text waves-effect waves-light small_button"
+									onClick="run('#64dd17')" data-clipboard-text="#64dd17">#64dd17 <br> light-green
+									accent-4</a>
+							</div>
+
+						</div>
+						<!-- TODO: row- 5 -->
+						<div class="row">
+							<div class="col l4" style=" padding-left: 50px;"></div>
+							<div class="col l4" style=" padding-left: 50px;">
+								<a class="btn light-green lighten-5 black-text small_button waves-effect waves-red"
+									onClick="run('#f1f8e9')" data-clipboard-text="#f1f8e9">#f1f8e9 <br> light-green
+									lighten-5</a>
+							</div>
+							<div class="col l4" style=" padding-left: 50px;"></div>
+						</div>
+					</div>
+					<!-- TODO: Big button -->
+					<div class="col l3" style="padding-top:40px; padding-left:50px;">
+						<a class="btn light-green waves-effect waves-light big_button" onClick="run('#8bc34a')"
+							data-clipboard-text="#8bc34a">
+							#8bc34a <br> light-green
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+
+	<!-- TODO: Page - 14 -->
+	<section class="grey lighten-5 scrollspy" id="lime" style="padding-top: 20px;">
+		<h2 class="content_headline lime-text">lime color</h2>
+		<!-- TODO: Header Name -->
+		<div class="row">
+			<div class="row">
+				<div class="col l3">
+					<p class="center lime-text header_name">Darken Color</p>
+				</div>
+				<div class="col l3">
+					<p class="center lime-text header_name">Lighten Color</p>
+				</div>
+				<div class="col l3">
+					<p class="center lime-text header_name">Accent Color</p>
+				</div>
+				<div class="col l3">
+					<p class="center lime-text header_name">Color</p>
+				</div>
+			</div>
+			<!-- TODO: Sub-Header Name -->
+			<div class="row">
+				<div class="col l9">
+					<!-- TODO: row- 1 -->
+					<div class="row">
+						<div class="col l4" style=" padding-left: 50px;">
+							<a class="btn lime darken-1 waves-effect waves-dark white-text small_button"
+								onClick="run('#c0ca33')" data-clipboard-text="#c0ca33">#c0ca33 <br> lime
+								darken-1</a>
+						</div>
+
+						<div class="col l4" style=" padding-left: 50px;">
+							<a class="btn lime lighten-1  waves-effect waves-dark  black-text small_button"
+								onClick="run('#d4e157')" data-clipboard-text="#d4e157">#d4e157 <br> lime
+								lighten-1</a>
+						</div>
+
+						<div class="col l4" style=" padding-left: 50px;">
+							<a class="btn lime accent-1 waves-effect waves-dark black-text small_button"
+								onClick="run('#f4ff81')" data-clipboard-text="#f4ff81">#f4ff81 <br> lime
+								accent-1</a>
+						</div>
+
+					</div>
+
+					<!-- TODO: row- 2 -->
+					<div class="row">
+						<div class="col l4" style=" padding-left: 50px;">
+							<a class="btn lime darken-2 white-text waves-effect waves-dark small_button"
+								onClick="run('#afb42b')" data-clipboard-text="#afb42b">#afb42b <br> lime
+								darken-2</a>
+						</div>
+						<div class="col l4" style="padding-left: 50px;">
+							<a class="btn lime lighten-2 black-text waves-effect waves-dark small_button"
+								onClick="run('#dce775')" data-clipboard-text="#dce775">#dce775 <br> lime
+								lighten-2</a>
+						</div>
+						<div class="col l4" style=" padding-left: 50px;">
+							<a class="btn lime accent-2 black-text waves-effect waves-dark small_button"
+								onClick="run('#eeff41')" data-clipboard-text="#eeff41">#eeff41 <br> lime
+								accent-2</a>
+						</div>
+
+					</div>
+					<!-- TODO: row- 3 -->
+					<div class="row">
+						<div class="col l4" style="padding-left: 50px;">
+							<a class="btn lime darken-3 waves-effect waves-dark white-text small_button"
+								onClick="run('#9e9d24')" data-clipboard-text="#9e9d24">#9e9d24 <br> lime
+								darken-3</a>
+						</div>
+
+						<div class="col l4" style="padding-left: 50px;">
+							<a class="btn lime lighten-3 waves-effect waves-dark black-text small_button"
+								onClick="run('#e6ee9c')" data-clipboard-text="#e6ee9c">#e6ee9c <br> lime
+								lighten-3</a>
+						</div>
+
+						<div class="col l4" style="padding-left: 50px;">
+							<a class="btn lime accent-3 waves-effect waves-dark black-text small_button"
+								onClick="run('#c6ff00')" data-clipboard-text="#c6ff00">#c6ff00 <br> lime
+								accent-3</a>
+						</div>
+
+					</div>
+					<!-- TODO: row- 4 -->
+					<div class="row">
+						<div class="col l4" style=" padding-left: 50px;">
+							<a class="btn lime darken-4 white-text waves-effect waves-light small_button"
+								onClick="run('#827717')" data-clipboard-text="#827717">#827717 <br> lime
+								darken-4</a>
+						</div>
+
+						<div class="col l4" style=" padding-left: 50px;">
+							<a class="btn lime lighten-4 black-text waves-effect waves-red small_button"
+								onClick="run('#f0f4c3')" data-clipboard-text="#f0f4c3">#f0f4c3 <br> lime
+								lighten-4</a>
+						</div>
+
+						<div class="col l4" style="padding-left: 50px;">
+							<a class="btn lime accent-4 black-text waves-effect waves-light small_button"
+								onClick="run('#aeea00')" data-clipboard-text="#aeea00">#aeea00 <br> lime
+								accent-4</a>
+						</div>
+
+					</div>
+					<!-- TODO: row- 5 -->
+					<div class="row">
+						<div class="col l4" style=" padding-left: 50px;"></div>
+
+						<div class="col l4" style=" padding-left: 50px;">
+							<a class="btn lime lighten-5 black-text small_button waves-effect waves-red"
+								onClick="run('#e8f5e9')" data-clipboard-text="#e8f5e9">#f9fbe7 <br> lime
+								lighten-5</a>
+						</div>
+
+						<div class="col l4" style=" padding-left: 50px;"></div>
+					</div>
+				</div>
+				<!-- TODO: Big button -->
+				<div class="col l3" style="padding-top:40px; padding-left:50px;">
+					<a class="btn lime waves-effect waves-light big_button" onClick="run('#4caf50')"
+						data-clipboard-text="#4caf50">
+						#cddc39 <br> lime
+					</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- TODO: Page - 15 -->
+	<section class="grey lighten-4 scrollspy" id="yellow" style="padding-top: 20px;">
+		<h2 class="content_headline yellow-text">yellow color</h2>
+		<!-- TODO: Header Name -->
+		<div class="row">
+			<div class="row">
+				<div class="col l3">
+					<p class="center yellow-text header_name">Darken Color</p>
+				</div>
+				<div class="col l3">
+					<p class="center yellow-text header_name">Lighten Color</p>
+				</div>
+				<div class="col l3">
+					<p class="center yellow-text header_name">Accent Color</p>
+				</div>
+				<div class="col l3">
+					<p class="center yellow-text header_name">Color</p>
+				</div>
+			</div>
+			<!-- TODO: Sub-Header Name -->
+			<div class="row">
+				<div class="col l9">
+					<!-- TODO: row- 1 -->
+					<div class="row">
+						<div class="col l4" style=" padding-left: 50px;">
+							<a class="btn yellow darken-1 waves-effect waves-dark white-text small_button"
+								onClick="run('#fdd835')" data-clipboard-text="#fdd835">#fdd835 <br> yellow
+								darken-1</a>
+						</div>
+
+						<div class="col l4" style=" padding-left: 50px;">
+							<a class="btn yellow lighten-1  waves-effect waves-dark  black-text small_button"
+								onClick="run('#ffee58')" data-clipboard-text="#ffee58">#ffee58 <br> yellow
+								lighten-1</a>
+						</div>
+
+						<div class="col l4" style=" padding-left: 50px;">
+							<a class="btn yellow accent-1 waves-effect waves-dark black-text small_button"
+								onClick="run('#ffff8d')" data-clipboard-text="#ffff8d">#ffff8d <br> yellow
+								accent-1</a>
+						</div>
+
+					</div>
+
+					<!-- TODO: row- 2 -->
+					<div class="row">
+						<div class="col l4" style=" padding-left: 50px;">
+							<a class="btn yellow darken-2 white-text waves-effect waves-dark small_button"
+								onClick="run('#fbc02d')" data-clipboard-text="#fbc02d">#fbc02d <br> yellow
+								darken-2</a>
+						</div>
+						<div class="col l4" style="padding-left: 50px;">
+							<a class="btn yellow lighten-2 black-text waves-effect waves-dark small_button"
+								onClick="run('#fff176')" data-clipboard-text="#fff176">#fff176 <br> yellow
+								lighten-2</a>
+						</div>
+						<div class="col l4" style=" padding-left: 50px;">
+							<a class="btn yellow accent-2 black-text waves-effect waves-dark small_button"
+								onClick="run('#ffff00')" data-clipboard-text="#ffff00">#ffff00 <br> yellow
+								accent-2</a>
+						</div>
+
+					</div>
+					<!-- TODO: row- 3 -->
+					<div class="row">
+						<div class="col l4" style="padding-left: 50px;">
+							<a class="btn yellow darken-3 waves-effect waves-dark white-text small_button"
+								onClick="run('#f9a825')" data-clipboard-text="#f9a825">#f9a825 <br> yellow
+								darken-3</a>
+						</div>
+
+						<div class="col l4" style="padding-left: 50px;">
+							<a class="btn yellow lighten-3 waves-effect waves-dark black-text small_button"
+								onClick="run('#fff59d')" data-clipboard-text="#fff59d">#fff59d <br> yellow
+								lighten-3</a>
+						</div>
+
+						<div class="col l4" style="padding-left: 50px;">
+							<a class="btn yellow accent-3 waves-effect waves-dark black-text small_button"
+								onClick="run('#ffea00')" data-clipboard-text="#ffea00">#ffea00 <br> yellow
+								accent-3</a>
+						</div>
+
+					</div>
+					<!-- TODO: row- 4 -->
+					<div class="row">
+						<div class="col l4" style=" padding-left: 50px;">
+							<a class="btn yellow darken-4 white-text waves-effect waves-light small_button"
+								onClick="run('#f57f17')" data-clipboard-text="#f57f17">#f57f17 <br> yellow
+								darken-4</a>
+						</div>
+
+						<div class="col l4" style=" padding-left: 50px;">
+							<a class="btn yellow lighten-4 black-text waves-effect waves-red small_button"
+								onClick="run('#fff9c4')" data-clipboard-text="#fff9c4">#fff9c4 <br> yellow
+								lighten-4</a>
+						</div>
+
+						<div class="col l4" style="padding-left: 50px;">
+							<a class="btn yellow accent-4 black-text waves-effect waves-light small_button"
+								onClick="run('#ffd600')" data-clipboard-text="#ffd600">#ffd600 <br> yellow
+								accent-4</a>
+						</div>
+
+					</div>
+					<!-- TODO: row- 5 -->
+					<div class="row">
+						<div class="col l4" style=" padding-left: 50px;"></div>
+						<div class="col l4" style=" padding-left: 50px;">
+							<a class="btn yellow lighten-5 black-text small_button waves-effect waves-red"
+								onClick="run('#fffde7')" data-clipboard-text="#fffde7">#fffde7 <br> yellow
+								lighten-5</a>
+						</div>
+						<div class="col l4" style=" padding-left: 50px;"></div>
+					</div>
+				</div>
+				<!-- TODO: Big button -->
+				<div class="col l3" style="padding-top:40px; padding-left:50px;">
+					<a class="btn yellow waves-effect waves-light big_button" onClick="run('#ffeb3b')"
+						data-clipboard-text="#ffeb3b">
+						#ffeb3b <br> yellow
+					</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<!-- TODO: Page - 16 -->
+	<section class="grey lighten-5 scrollspy" id="amber" style="padding-top: 20px;">
+		<h2 class="content_headline amber-text">amber color</h2>
+		<!-- TODO: Header Name -->
+		<div class="row">
+			<div class="row">
+				<div class="col l3">
+					<p class="center amber-text header_name">Darken Color</p>
+				</div>
+				<div class="col l3">
+					<p class="center amber-text header_name">Lighten Color</p>
+				</div>
+				<div class="col l3">
+					<p class="center amber-text header_name">Accent Color</p>
+				</div>
+				<div class="col l3">
+					<p class="center amber-text header_name">Color</p>
+				</div>
+			</div>
+			<!-- TODO: Sub-Header Name -->
+			<div class="row">
+				<div class="col l9">
+					<!-- TODO: row- 1 -->
+					<div class="row">
+						<div class="col l4" style=" padding-left: 50px;">
+							<a class="btn amber darken-1 waves-effect waves-dark white-text small_button"
+								onClick="run('#ffb300')" data-clipboard-text="#ffb300">#ffb300 <br> amber
+								darken-1</a>
+						</div>
+
+						<div class="col l4" style=" padding-left: 50px;">
+							<a class="btn amber lighten-1  waves-effect waves-dark  black-text small_button"
+								onClick="run('#ffca28')" data-clipboard-text="#ffca28">#ffca28 <br> amber
+								lighten-1</a>
+						</div>
+
+						<div class="col l4" style=" padding-left: 50px;">
+							<a class="btn amber accent-1 waves-effect waves-dark black-text small_button"
+								onClick="run('#ffe57f')" data-clipboard-text="#ffe57f">#ffe57f <br> amber
+								accent-1</a>
+						</div>
+
+					</div>
+
+					<!-- TODO: row- 2 -->
+					<div class="row">
+						<div class="col l4" style=" padding-left: 50px;">
+							<a class="btn amber darken-2 white-text waves-effect waves-dark small_button"
+								onClick="run('#ffa000')" data-clipboard-text="#ffa000">#ffa000 <br> amber
+								darken-2</a>
+						</div>
+						<div class="col l4" style="padding-left: 50px;">
+							<a class="btn amber lighten-2 black-text waves-effect waves-dark small_button"
+								onClick="run('#ffd54f')" data-clipboard-text="#ffd54f">#ffd54f <br> amber
+								lighten-2</a>
+						</div>
+						<div class="col l4" style=" padding-left: 50px;">
+							<a class="btn amber accent-2 black-text waves-effect waves-dark small_button"
+								onClick="run('#ffd740')" data-clipboard-text="#ffd740">#ffd740 <br> amber
+								accent-2</a>
+						</div>
+
+					</div>
+					<!-- TODO: row- 3 -->
+					<div class="row">
+						<div class="col l4" style="padding-left: 50px;">
+							<a class="btn amber darken-3 waves-effect waves-dark white-text small_button"
+								onClick="run('#ff8f00')" data-clipboard-text="#ff8f00">#ff8f00 <br> amber
+								darken-3</a>
+						</div>
+
+						<div class="col l4" style="padding-left: 50px;">
+							<a class="btn amber lighten-3 waves-effect waves-dark black-text small_button"
+								onClick="run('#ffe082')" data-clipboard-text="#ffe082">#ffe082 <br> amber
+								lighten-3</a>
+						</div>
+
+						<div class="col l4" style="padding-left: 50px;">
+							<a class="btn amber accent-3 waves-effect waves-dark black-text small_button"
+								onClick="run('#ffc400')" data-clipboard-text="#ffc400">#ffc400 <br> amber
+								accent-3</a>
+						</div>
+
+					</div>
+					<!-- TODO: row- 4 -->
+					<div class="row">
+						<div class="col l4" style=" padding-left: 50px;">
+							<a class="btn amber darken-4 white-text waves-effect waves-light small_button"
+								onClick="run('#ff6f00')" data-clipboard-text="#ff6f00">#ff6f00 <br> amber
+								darken-4</a>
+						</div>
+
+						<div class="col l4" style=" padding-left: 50px;">
+							<a class="btn amber lighten-4 black-text waves-effect waves-red small_button"
+								onClick="run('#ffecb3')" data-clipboard-text="#ffecb3">#ffecb3 <br> amber
+								lighten-4</a>
+						</div>
+
+						<div class="col l4" style="padding-left: 50px;">
+							<a class="btn amber accent-4 black-text waves-effect waves-light small_button"
+								onClick="run('#ffab00')" data-clipboard-text="#ffab00">#ffab00 <br> amber
+								accent-4</a>
+						</div>
+
+					</div>
+					<!-- TODO: row- 5 -->
+					<div class="row">
+						<div class="col l4" style=" padding-left: 50px;"></div>
+						<div class="col l4" style=" padding-left: 50px;">
+							<a class="btn amber lighten-5 black-text small_button waves-effect waves-red"
+								onClick="run('#fff8e1')" data-clipboard-text="#fff8e1">#fff8e1 <br> amber
+								lighten-5</a>
+						</div>
+						<div class="col l4" style=" padding-left: 50px;"></div>
+					</div>
+				</div>
+				<!-- TODO: Big button -->
+				<div class="col l3" style="padding-top:40px; padding-left:50px;">
+					<a class="btn amber waves-effect waves-light big_button" onClick="run('#ffc107')"
+						data-clipboard-text="#ffc107">
+						#ffc107 <br> amber
+					</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- TODO: Page - 17 -->
+	<div id="orange">
+		<section class="grey lighten-4 scrollspy" style="padding-top: 20px;">
+			<h2 class="content_headline orange-text">orange color</h2>
+			<!-- TODO: Header Name -->
+			<div class="row">
+				<div class="row">
+					<div class="col l3">
+						<p class="center orange-text header_name">Darken Color</p>
+					</div>
+					<div class="col l3">
+						<p class="center orange-text header_name">Lighten Color</p>
+					</div>
+					<div class="col l3">
+						<p class="center orange-text header_name">Accent Color</p>
+					</div>
+					<div class="col l3">
+						<p class="center orange-text header_name">Color</p>
+					</div>
+				</div>
+				<!-- TODO: Sub-Header Name -->
+				<div class="row">
+					<div class="col l9">
+						<!-- TODO: row- 1 -->
+						<div class="row">
+							<div class="col l4" style=" padding-left: 50px;">
+								<a class="btn orange darken-1 waves-effect waves-dark white-text small_button"
+									onClick="run('#fb8c00')" data-clipboard-text="#fb8c00">#fb8c00 <br> orange
+									darken-1</a>
+							</div>
+
+							<div class="col l4" style=" padding-left: 50px;">
+								<a class="btn orange lighten-1  waves-effect waves-dark  black-text small_button"
+									onClick="run('#ffa726')" data-clipboard-text="#ffa726">#ffa726 <br> orange
+									lighten-1</a>
+							</div>
+
+							<div class="col l4" style=" padding-left: 50px;">
+								<a class="btn orange accent-1 waves-effect waves-dark black-text small_button"
+									onClick="run('#ffd180')" data-clipboard-text="#ffd180">#ffd180 <br> orange
+									accent-1</a>
+							</div>
+
+						</div>
+
+						<!-- TODO: row- 2 -->
+						<div class="row">
+							<div class="col l4" style=" padding-left: 50px;">
+								<a class="btn orange darken-2 white-text waves-effect waves-dark small_button"
+									onClick="run('#f57c00')" data-clipboard-text="#f57c00">#f57c00 <br> orange
+									darken-2</a>
+							</div>
+							<div class="col l4" style="padding-left: 50px;">
+								<a class="btn orange lighten-2 black-text waves-effect waves-dark small_button"
+									onClick="run('#ffb74d')" data-clipboard-text="#ffb74d">#ffb74d <br> orange
+									lighten-2</a>
+							</div>
+							<div class="col l4" style=" padding-left: 50px;">
+								<a class="btn orange accent-2 black-text waves-effect waves-dark small_button"
+									onClick="run('#ffab40')" data-clipboard-text="#ffab40">#ffab40 <br> orange
+									accent-2</a>
+							</div>
+
+						</div>
+						<!-- TODO: row- 3 -->
+						<div class="row">
+							<div class="col l4" style="padding-left: 50px;">
+								<a class="btn orange darken-3 waves-effect waves-dark white-text small_button"
+									onClick="run('#ef6c00')" data-clipboard-text="#ef6c00">#ef6c00 <br> orange
+									darken-3</a>
+							</div>
+
+							<div class="col l4" style="padding-left: 50px;">
+								<a class="btn orange lighten-3 waves-effect waves-dark black-text small_button"
+									onClick="run('#ffcc80')" data-clipboard-text="#ffcc80">#ffcc80 <br> orange
+									lighten-3</a>
+							</div>
+
+							<div class="col l4" style="padding-left: 50px;">
+								<a class="btn orange accent-3 waves-effect waves-dark black-text small_button"
+									onClick="run('#ff9100')" data-clipboard-text="#ff9100">#ff9100 <br> orange
+									accent-3</a>
+							</div>
+
+						</div>
+						<!-- TODO: row- 4 -->
+						<div class="row">
+							<div class="col l4" style=" padding-left: 50px;">
+								<a class="btn orange darken-4 white-text waves-effect waves-light small_button"
+									onClick="run('#e65100')" data-clipboard-text="#e65100">#e65100 <br> orange
+									darken-4</a>
+							</div>
+
+							<div class="col l4" style=" padding-left: 50px;">
+								<a class="btn orange lighten-4 black-text waves-effect waves-red small_button"
+									onClick="run('#ffe0b2')" data-clipboard-text="#ffe0b2">#ffe0b2 <br> orange
+									lighten-4</a>
+							</div>
+
+							<div class="col l4" style="padding-left: 50px;">
+								<a class="btn orange accent-4 black-text waves-effect waves-light small_button"
+									onClick="run('#ff6d00')" data-clipboard-text="#ff6d00">#ff6d00 <br> orange
+									accent-4</a>
+							</div>
+
+						</div>
+						<!-- TODO: row- 5 -->
+						<div class="row">
+							<div class="col l4" style=" padding-left: 50px;"></div>
+							<div class="col l4" style=" padding-left: 50px;">
+								<a class="btn orange lighten-5 black-text small_button waves-effect waves-red"
+									onClick="run('#fff3e0')" data-clipboard-text="#fff3e0">#fff3e0 <br> orange
+									lighten-5</a>
+							</div>
+							<div class="col l4" style=" padding-left: 50px;"></div>
+						</div>
+					</div>
+					<!-- TODO: Big button -->
+					<div class="col l3" style="padding-top:40px; padding-left:50px;">
+						<a class="btn orange waves-effect waves-light big_button" onClick="run('#ff9800')"
+							data-clipboard-text="#ff9800">
+							#ff9800 <br> orange
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+
+
+	<!-- TODO: Page - 18 -->
+	<div id="deep-orange">
+		<section class="grey lighten-5 scrollspy" style="padding-top: 20px;">
+			<h2 class="content_headline deep-orange-text">deep-orange color</h2>
+			<!-- TODO: Header Name -->
+			<div class="row">
+				<div class="row">
+					<div class="col l3">
+						<p class="center deep-orange-text header_name">Darken Color</p>
+					</div>
+					<div class="col l3">
+						<p class="center deep-orange-text header_name">Lighten Color</p>
+					</div>
+					<div class="col l3">
+						<p class="center deep-orange-text header_name">Accent Color</p>
+					</div>
+					<div class="col l3">
+						<p class="center deep-orange-text header_name">Color</p>
+					</div>
+				</div>
+				<!-- TODO: Sub-Header Name -->
+				<div class="row">
+					<div class="col l9">
+						<!-- TODO: row- 1 -->
+						<div class="row">
+							<div class="col l4" style=" padding-left: 50px;">
+								<a class="btn deep-orange darken-1 waves-effect waves-dark white-text small_button"
+									onClick="run('#f4511e')" data-clipboard-text="#f4511e">#f4511e <br> deep-orange
+									darken-1</a>
+							</div>
+
+							<div class="col l4" style=" padding-left: 50px;">
+								<a class="btn deep-orange lighten-1  waves-effect waves-dark  black-text small_button"
+									onClick="run('#ff7043')" data-clipboard-text="#ff7043">#ff7043 <br> deep-orange
+									lighten-1</a>
+							</div>
+
+							<div class="col l4" style=" padding-left: 50px;">
+								<a class="btn deep-orange accent-1 waves-effect waves-dark black-text small_button"
+									onClick="run('#ff9e80')" data-clipboard-text="#ff9e80">#ff9e80 <br> deep-orange
+									accent-1</a>
+							</div>
+
+						</div>
+
+						<!-- TODO: row- 2 -->
+						<div class="row">
+							<div class="col l4" style=" padding-left: 50px;">
+								<a class="btn deep-orange darken-2 white-text waves-effect waves-dark small_button"
+									onClick="run('#e64a19')" data-clipboard-text="#e64a19">#e64a19 <br> deep-orange
+									darken-2</a>
+							</div>
+							<div class="col l4" style="padding-left: 50px;">
+								<a class="btn deep-orange lighten-2 black-text waves-effect waves-dark small_button"
+									onClick="run('#ff8a65')" data-clipboard-text="#ff8a65">#ff8a65 <br> deep-orange
+									lighten-2</a>
+							</div>
+							<div class="col l4" style=" padding-left: 50px;">
+								<a class="btn deep-orange accent-2 black-text waves-effect waves-dark small_button"
+									onClick="run('#ff6e40')" data-clipboard-text="#ff6e40">#ff6e40 <br> deep-orange
+									accent-2</a>
+							</div>
+
+						</div>
+						<!-- TODO: row- 3 -->
+						<div class="row">
+							<div class="col l4" style="padding-left: 50px;">
+								<a class="btn deep-orange darken-3 waves-effect waves-dark white-text small_button"
+									onClick="run('#d84315')" data-clipboard-text="#d84315">#d84315 <br> deep-orange
+									darken-3</a>
+							</div>
+
+							<div class="col l4" style="padding-left: 50px;">
+								<a class="btn deep-orange lighten-3 waves-effect waves-dark black-text small_button"
+									onClick="run('#ffab91')" data-clipboard-text="#ffab91">#ffab91 <br> deep-orange
+									lighten-3</a>
+							</div>
+
+							<div class="col l4" style="padding-left: 50px;">
+								<a class="btn deep-orange accent-3 waves-effect waves-dark black-text small_button"
+									onClick="run('#ff3d00')" data-clipboard-text="#ff3d00">#ff3d00 <br> deep-orange
+									accent-3</a>
+							</div>
+
+						</div>
+						<!-- TODO: row- 4 -->
+						<div class="row">
+							<div class="col l4" style=" padding-left: 50px;">
+								<a class="btn deep-orange darken-4 white-text waves-effect waves-light small_button"
+									onClick="run('#bf360c')" data-clipboard-text="#bf360c">#bf360c <br> deep-orange
+									darken-4</a>
+							</div>
+
+							<div class="col l4" style=" padding-left: 50px;">
+								<a class="btn deep-orange lighten-4 black-text waves-effect waves-red small_button"
+									onClick="run('#ffccbc')" data-clipboard-text="#f0f4c3">#ffccbc <br> deep-orange
+									lighten-4</a>
+							</div>
+
+							<div class="col l4" style="padding-left: 50px;">
+								<a class="btn deep-orange accent-4 black-text waves-effect waves-light small_button"
+									onClick="run('#dd2c00')" data-clipboard-text="#dd2c00">#dd2c00 <br> deep-orange
+									accent-4</a>
+							</div>
+
+						</div>
+						<!-- TODO: row- 5 -->
+						<div class="row">
+							<div class="col l4" style=" padding-left: 50px;"></div>
+
+							<div class="col l4" style=" padding-left: 50px;">
+								<a class="btn deep-orange lighten-5 black-text small_button waves-effect waves-red"
+									onClick="run('#fbe9e7')" data-clipboard-text="#fbe9e7">#fbe9e7 <br> deep-orange
+									lighten-5</a>
+							</div>
+
+							<div class="col l4" style=" padding-left: 50px;"></div>
+						</div>
+					</div>
+					<!-- TODO: Big button -->
+					<div class="col l3" style="padding-top:40px; padding-left:50px;">
+						<a class="btn deep-orange waves-effect waves-light big_button" onClick="run('#ff5722')"
+							data-clipboard-text="#ff5722">
+							#ff5722 <br> deep-orange
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+
+
+	<!-- TODO: Page - 19 -->
+	<section class="grey lighten-4 scrollspy" id="brown" style="padding-top: 20px;">
+		<h2 class="content_headline brown-text">brown color</h2>
+		<!-- TODO: Header Name -->
+		<div class="row">
+			<div class="row">
+				<div class="col l4">
+					<p class="center brown-text header_name">Darken Color</p>
+				</div>
+				<div class="col l4">
+					<p class="center brown-text header_name">Lighten Color</p>
+				</div>
+				<div class="col l4">
+					<p class="center brown-text header_name">Color</p>
+				</div>
+			</div>
+			<!-- TODO: Sub-Header Name -->
+			<div class="row">
+				<div class="col l9">
+					<!-- TODO: row- 1 -->
+					<div class="row">
+						<div class="col l6" style="padding-left: 100px;">
+							<a class="btn brown darken-1 waves-effect waves-dark white-text small_button"
+								onClick="run('#6d4c41')" data-clipboard-text="#6d4c41">#6d4c41 <br> brown
+								darken-1</a>
+						</div>
+
+						<div class="col l6" style=" padding-left: 50px;">
+							<a class="btn brown lighten-1  waves-effect waves-dark  white-text small_button"
+								onClick="run('#8d6e63')" data-clipboard-text="#8d6e63">#8d6e63 <br> brown
+								lighten-1</a>
+						</div>
+
+
+					</div>
+
+					<!-- TODO: row- 2 -->
+					<div class="row">
+						<div class="col l6" style=" padding-left: 100px;">
+							<a class="btn brown darken-2 white-text waves-effect waves-dark small_button"
+								onClick="run('#5d4037')" data-clipboard-text="#5d4037">#5d4037 <br> brown
+								darken-2</a>
+						</div>
+						<div class="col l6" style="padding-left: 50px;">
+							<a class="btn brown lighten-2 white-text waves-effect waves-dark small_button"
+								onClick="run('#a1887f')" data-clipboard-text="#a1887f">#a1887f <br> brown
+								lighten-2</a>
+						</div>
+
+
+					</div>
+					<!-- TODO: row- 3 -->
+					<div class="row">
+						<div class="col l6" style="padding-left: 100px;">
+							<a class="btn brown darken-3 waves-effect waves-dark white-text small_button"
+								onClick="run('#4e342e')" data-clipboard-text="#4e342e">#4e342e <br> brown
+								darken-3</a>
+						</div>
+
+						<div class="col l6" style="padding-left: 50px;">
+							<a class="btn brown lighten-3 waves-effect waves-dark black-text small_button"
+								onClick="run('#bcaaa4')" data-clipboard-text="#bcaaa4">#bcaaa4 <br> brown
+								lighten-3</a>
+						</div>
+
+
+
+					</div>
+					<!-- TODO: row- 4 -->
+					<div class="row">
+						<div class="col l6" style=" padding-left: 100px;">
+							<a class="btn brown darken-4 white-text waves-effect waves-light small_button"
+								onClick="run('#3e2723')" data-clipboard-text="#3e2723">#3e2723 <br> brown
+								darken-4</a>
+						</div>
+
+						<div class="col l6" style=" padding-left: 50px;">
+							<a class="btn brown lighten-4 black-text waves-effect waves-red small_button"
+								onClick="run('#d7ccc8')" data-clipboard-text="#d7ccc8">#d7ccc8 <br> brown
+								lighten-4</a>
+						</div>
+
+
+					</div>
+					<!-- TODO: row- 5 -->
+					<div class="row">
+						<div class="col l6" style=" padding-left: 50px;"></div>
+						<div class="col l2" style=" padding-left: 50px;">
+							<a class="btn brown lighten-5 black-text small_button waves-effect waves-red"
+								onClick="run('#efebe9')" data-clipboard-text="#efebe9">#efebe9 <br> brown
+								lighten-5</a>
+						</div>
+						<div class="col l4" style=" padding-left: 50px;"></div>
+					</div>
+				</div>
+				<!-- TODO: Big button -->
+				<div class="col l3" style="padding-top:50px; padding-right:80px;">
+					<a class="btn brown waves-effect waves-light big_button" onClick="run('#795548')"
+						data-clipboard-text="#795548">
+						#795548 <br> brown
+					</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<!-- TODO: Page - 20 -->
+	<div id="grey">
+		<section class="grey lighten-5 scrollspy" style="padding-top: 20px;">
+			<h2 class="content_headline grey-text">grey color</h2>
+			<!-- TODO: Header Name -->
+			<div class="row">
+				<div class="row">
+					<div class="col l4">
+						<p class="center grey-text header_name">Darken Color</p>
+					</div>
+					<div class="col l4">
+						<p class="center grey-text header_name">Lighten Color</p>
+					</div>
+					<div class="col l4">
+						<p class="center grey-text header_name">Color</p>
+					</div>
+				</div>
+				<!-- TODO: Sub-Header Name -->
+				<div class="row">
+					<div class="col l9">
+						<!-- TODO: row- 1 -->
+						<div class="row">
+							<div class="col l6" style="padding-left: 100px;">
+								<a class="btn grey darken-1 waves-effect waves-dark white-text small_button"
+									onClick="run('#757575')" data-clipboard-text="#757575">#757575 <br> grey
+									darken-1</a>
+							</div>
+
+							<div class="col l6" style=" padding-left: 50px;">
+								<a class="btn grey lighten-1  waves-effect waves-dark  white-text small_button"
+									onClick="run('#bdbdbd')" data-clipboard-text="#bdbdbd">#bdbdbd <br> grey
+									lighten-1</a>
+							</div>
+
+
+						</div>
+
+						<!-- TODO: row- 2 -->
+						<div class="row">
+							<div class="col l6" style=" padding-left: 100px;">
+								<a class="btn grey darken-2 white-text waves-effect waves-dark small_button"
+									onClick="run('#616161')" data-clipboard-text="#616161">#616161 <br> grey
+									darken-2</a>
+							</div>
+							<div class="col l6" style="padding-left: 50px;">
+								<a class="btn grey lighten-2 white-text waves-effect waves-dark small_button"
+									onClick="run('#e0e0e0')" data-clipboard-text="#e0e0e0">#e0e0e0 <br> grey
+									lighten-2</a>
+							</div>
+
+
+						</div>
+						<!-- TODO: row- 3 -->
+						<div class="row">
+							<div class="col l6" style="padding-left: 100px;">
+								<a class="btn grey darken-3 waves-effect waves-dark white-text small_button"
+									onClick="run('#424242')" data-clipboard-text="#424242">#424242 <br> grey
+									darken-3</a>
+							</div>
+
+							<div class="col l6" style="padding-left: 50px;">
+								<a class="btn grey lighten-3 waves-effect waves-dark black-text small_button"
+									onClick="run('#eeeeee')" data-clipboard-text="#eeeeee">#eeeeee <br> grey
+									lighten-3</a>
+							</div>
+
+
+
+						</div>
+						<!-- TODO: row- 4 -->
+						<div class="row">
+							<div class="col l6" style=" padding-left: 100px;">
+								<a class="btn grey darken-4 white-text waves-effect waves-light small_button"
+									onClick="run('#212121')" data-clipboard-text="#212121">#212121 <br> grey
+									darken-4</a>
+							</div>
+
+							<div class="col l6" style=" padding-left: 50px;">
+								<a class="btn grey lighten-4 black-text waves-effect waves-red small_button"
+									onClick="run('#f5f5f5')" data-clipboard-text="#f5f5f5">#f5f5f5 <br> grey
+									lighten-4</a>
+							</div>
+
+
+						</div>
+						<!-- TODO: row- 5 -->
+						<div class="row">
+							<div class="col l6" style=" padding-left: 50px;"></div>
+							<div class="col l2" style=" padding-left: 50px;">
+								<a class="btn grey lighten-5 black-text small_button waves-effect waves-red"
+									onClick="run('#fafafa')" data-clipboard-text="#fafafa">#fafafa <br> grey
+									lighten-5</a>
+							</div>
+							<div class="col l4" style=" padding-left: 50px;"></div>
+						</div>
+					</div>
+					<!-- TODO: Big button -->
+					<div class="col l3" style="padding-top:50px; padding-right:80px;">
+						<a class="btn grey waves-effect waves-light big_button" onClick="run('#9e9e9e')"
+							data-clipboard-text="#9e9e9e">
+							#9e9e9e <br> grey
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+
+	<!-- TODO: Page - 21 -->
+	<div id="blue-grey">
+		<section class="grey lighten-4 scrollspy" style="padding-top: 20px;">
+			<h2 class="content_headline blue-grey-text">blue-grey color</h2>
+			<!-- TODO: Header Name -->
+			<div class="row">
+				<div class="row">
+					<div class="col l4">
+						<p class="center blue-grey-text header_name">Darken Color</p>
+					</div>
+					<div class="col l4">
+						<p class="center blue-grey-text header_name">Lighten Color</p>
+					</div>
+					<div class="col l4">
+						<p class="center blue-grey-text header_name">Color</p>
+					</div>
+				</div>
+				<!-- TODO: Sub-Header Name -->
+				<div class="row">
+					<div class="col l9">
+						<!-- TODO: row- 1 -->
+						<div class="row">
+							<div class="col l6" style="padding-left: 100px;">
+								<a class="btn blue-grey darken-1 waves-effect waves-dark white-text small_button"
+									onClick="run('#546e7a')" data-clipboard-text="#546e7a">#546e7a <br> blue-grey
+									darken-1</a>
+							</div>
+
+							<div class="col l6" style=" padding-left: 50px;">
+								<a class="btn blue-grey lighten-1  waves-effect waves-dark  white-text small_button"
+									onClick="run('#78909c')" data-clipboard-text="#78909c">#78909c <br> blue-grey
+									lighten-1</a>
+							</div>
+
+
+						</div>
+
+						<!-- TODO: row- 2 -->
+						<div class="row">
+							<div class="col l6" style=" padding-left: 100px;">
+								<a class="btn blue-grey darken-2 white-text waves-effect waves-dark small_button"
+									onClick="run('#455a64')" data-clipboard-text="#455a64">#455a64 <br> blue-grey
+									darken-2</a>
+							</div>
+							<div class="col l6" style="padding-left: 50px;">
+								<a class="btn blue-grey lighten-2 white-text waves-effect waves-dark small_button"
+									onClick="run('#90a4ae')" data-clipboard-text="#90a4ae">#90a4ae <br> blue-grey
+									lighten-2</a>
+							</div>
+
+
+						</div>
+						<!-- TODO: row- 3 -->
+						<div class="row">
+							<div class="col l6" style="padding-left: 100px;">
+								<a class="btn blue-grey darken-3 waves-effect waves-dark white-text small_button"
+									onClick="run('#37474f')" data-clipboard-text="#37474f">#37474f <br> blue-grey
+									darken-3</a>
+							</div>
+
+							<div class="col l6" style="padding-left: 50px;">
+								<a class="btn blue-grey lighten-3 waves-effect waves-dark black-text small_button"
+									onClick="run('#b0bec5')" data-clipboard-text="#b0bec5">#b0bec5 <br> blue-grey
+									lighten-3</a>
+							</div>
+
+
+
+						</div>
+						<!-- TODO: row- 4 -->
+						<div class="row">
+							<div class="col l6" style=" padding-left: 100px;">
+								<a class="btn blue-grey darken-4 white-text waves-effect waves-light small_button"
+									onClick="run('#263238')" data-clipboard-text="#263238">#263238 <br> blue-grey
+									darken-4</a>
+							</div>
+
+							<div class="col l6" style=" padding-left: 50px;">
+								<a class="btn blue-grey lighten-4 black-text waves-effect waves-red small_button"
+									onClick="run('#cfd8dc')" data-clipboard-text="#cfd8dc">#cfd8dc <br> blue-grey
+									lighten-4</a>
+							</div>
+
+
+						</div>
+						<!-- TODO: row- 5 -->
+						<div class="row">
+							<div class="col l6" style=" padding-left: 50px;"></div>
+							<div class="col l2" style=" padding-left: 50px;">
+								<a class="btn blue-grey lighten-5 black-text small_button waves-effect waves-red"
+									onClick="run('#eceff1')" data-clipboard-text="#eceff1">#eceff1 <br> blue-grey
+									lighten-5</a>
+							</div>
+							<div class="col l4" style=" padding-left: 50px;"></div>
+						</div>
+					</div>
+					<!-- TODO: Big button -->
+					<div class="col l3" style="padding-top:50px; padding-right:80px;">
+						<a class="btn blue-grey waves-effect waves-light big_button" onClick="run('#607d8b')"
+							data-clipboard-text="#607d8b">
+							#607d8b <br> blue-grey
+						</a>
+					</div>
+				</div>
+			</div>
+	</div>
+	</section>
+	</div>
+
+
+	<!-- TODO: Page - 22 -->
+	<section class="grey lighten-5 scrollspy" id="miscellaneous" style="padding-top: 20px;">
+		<h2 class="content_headline black-text">miscellaneous color</h2>
+		<!-- TODO: Header Name -->
+		<!-- TODO: Sub-Header Name -->
+		<div class="row">
+			<!-- TODO: Big button -->
+			<div class="col l3" style="padding-top:40px; padding-left:50px;">
+				<a class="btn black waves-effect waves-light big_button" onClick="run('#000000')"
+					data-clipboard-text="#000000">
+					#000000 <br> black
+				</a>
+			</div>
+			<div class="col l3" style="padding-top:40px; padding-left:50px;">
+				<a class="btn white waves-effect waves-light big_button black-text" onClick="run('#ffffff')"
+					data-clipboard-text="#ffffff">
+					#ffffff <br> white
+				</a>
+			</div>
+			<div class="col l3" style="padding-top:40px; padding-left:50px;">
+				<a class="btn transparent waves-effect red-text waves-light big_button"
+					onClick="runTrans('Transparent is not a color' )" data-clipboard-text="">transparent
+				</a>
+			</div>
+		</div>
+	</section>
+
+	<!-- TODO: Page - Youtube Video docs -->
+	<section class="grey lighten-4 scrollspy" id="dvideo" style="padding-top: 20px;">
+		<h2 class="content_headline red-text">Watch Video for more information</h2>
+
+		<div class="row">
+			<div class="col l6">
+				<div class="section"></div>
+				<div class="section center">
+					<h5 class="pink-text">Download ColorHub Source File:</h5>
+					<div class="section"></div>
+					<a href="materialize/css/materialcolors.css" class="btn blue-grey darken-4 btn-large nav_link download="colorhub"> 
+						<i class="material-icons left">file_download</i>
+						Download 
+					</a>
+				</div>
+			</div>
+			<div class="col l6">
+				<div class="section"></div>
+				<div class="section center">
+					<iframe width="560" height="330" src="https://www.youtube.com/embed/6JGrE9zt48k" frameborder="0"
+						allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+						allowfullscreen></iframe>
+				</div>
+			</div>
+
+		</div>
+
+	</section>
+
+
+	<!-- TODO: Page - docs -->
+	<section class="grey lighten-5 scrollspy" id="docs" style="padding-top: 20px;">
+		<h2 class="content_headline red-text">Documentation</h2>
+
+		<div class="row">
+			<h5 class="pink-text left">Usages :</h5> <br> <br>
+			<blockquote class="deep-purple-text">Each of these colors is defined with a base color class and an optional
+				lighten or darken class or accent class as well as hex color code.
+			</blockquote>
+		</div>
+		<blockquote><span class="red-text">Note:</span> <span class="purple-text">First Download the Source file from "Docs" section. 👆👆👆</span></blockquote>
+		<div class="row">
+			<div class="col l6">
+				<!-- TODO: Background Color -->
+				<h5 class="pink-text left">Background Color :</h5> <br> <br>
+				<blockquote class="deep-purple-text">To apply a background color, just add the color name and
+					accent/light/darkness as a class to the element.
+				</blockquote>
+				<pre class="prettyprint container" style="max-height: 80px; padding-left: 20px;">
+						<xmp><div class="red"></xmp><xmp>red color displayed as a background color.</div></xmp>
+					</pre>
+				<div class="section">
+					Example:
+				</div>
+				<div class="red container">
+					red color displayed as a background color.
+				</div>
+			</div>
+			<div class="col l6">
+				<!-- TODO: Text Color -->
+				<h5 class="pink-text left">Text Color :</h5> <br> <br>
+				<blockquote class="deep-purple-text">To apply a text color, just append -text to the color class like
+					this:</blockquote>
+				<div class="section"></div>
+				<pre class="prettyprint container" style="max-height: 80px; padding-left: 20px;">
+						<xmp><div class="blue-text"></xmp><xmp>blue color as a text color displayed.</div></xmp>
+					</pre>
+				<div class="section">
+					Example:
+				</div>
+				<div class="blue-text container">
+					blue color as a text color displayed.
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+
+
+
+
+	<!-- TODO: Hope You Enjoy -->
+	<div class="section purple">
+		<div class="section">
+			<p class="center white-text flow-text">🔥 Hope Resources are very helpful for You 😊 Hope You Enjoy it 🔥</p>
+		</div>
+	</div>
+
+	<!-- TODO: Footer -->
+	<footer class="page-footer" style="background-color: #1d113f; width:100%; height: auto;">
+		<div class="container">
+			<div class="row">
+				<div class="col l6 s12">
+					<a href="http://mementoclasses.epizy.com/" target="_blank"><img src="img/logo.gif" alt="" width=120
+							height=90></a>
+					<p class="grey-text text-lighten-4">Memento Classes is the Computer Education Center.
+						<br> Providing
+						effective learning programs for Learners.</p>
+				</div>
+				<div class="col l4 offset-l2 s12">
+					<h4 class="white-text">For More Queries : </h4>
+					<ul>
+						<li class="flow-text" id="mail">
+							<a class="grey-text text-lighten-3"
+								href="mailto:paulsubham100@gmail.com?cc=jiouser799@gmail.com&subject=More%20info%20about%20Memento%20Classes&body=Welcome%20to%20Memento%20Classes%20|The%20Classes%20for%20Learners 😊😊!!%20How%20can%20I%20help%20You?"
+								target="_blank">paulsubham100@gmail.com<a>
+						</li>
+
+						<li class="flow-text" id="phone">
+							<a class="grey-text text-lighten-3" href="tel:7975437078">+91 797-543-7078</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="footer-copyright center z-depth-5">
+			<div class="container">
+				© 2020, Memento Classes. All rights reserved
+			</div>
+		</div>
+	</footer>
+
+	<!-- Compiled and minified JavaScript -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+	<script>
+		//TODO: Api
+		var channelId = 'UC54U2rosp_K1TAoykulHmDQ';
+		var maxNumber = 4;
+		var width = 500;
+		var height = 310;
+		var API_KEY = 'AIzaSyC8N-oUTLvjRROc746W0hHrOBeM7uMCE60';
+		$(document).ready(function () {
+			$.get(
+				"https://www.googleapis.com/youtube/v3/channels", {
+				part: 'contentDetails',
+				id: channelId,
+				key: API_KEY
+			},
+				function (data) {
+					$.each(data.items, function (i, item) {
+						// console.log(item);
+						pid = item.contentDetails.relatedPlaylists.uploads;
+						getVids(pid);
+					})
+				}
+			);
+
+			function getVids(pid) {
+				$.get(
+					"https://www.googleapis.com/youtube/v3/playlistItems", {
+					part: 'snippet',
+					playlistId: pid,
+					maxResults: maxNumber,
+					key: API_KEY,
+
+				},
+					function (data) {
+						var output;
+						$.each(data.items, function (i, item) {
+							console.log(item);
+							videoTitle = item.snippet.title;
+							videoId = item.snippet.resourceId.videoId;
+							output = '<iframe width=' + width + ' height=' + height + ' src=\"//www.youtube.com/embed/' + videoId + '\"frameborder=\"1\" allow=\"accelerometer;autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>';
+							// console.log(output);
+
+							//TODO: Append to results listStyleType
+							$('#demo').append(output);
+						})
+					}
+				);
+			}
+			// TODO: MaterializeCSS
+			$('.tap-target').tapTarget();
+			$('.fixed-action-btn').floatingActionButton({
+				toolbarEnabled: 'true'
+			});
+			$('.dropdown-trigger').dropdown({
+				coverTrigger: false,
+				hover: true,
+				constrainWidth: false
+			});
+			$('.modal').modal();
+			$('.sidenav').sidenav();
+			$('.chips').chips();
+			$('.scrollspy').scrollSpy();
+			if (sessionStorage.getItem('#dialog') !== 'true') {
+				$('#dialog').dialog({
+					// title:"Auto Close Window",
+					width: 660,
+					height: 470,
+					open: function () {
+						setTimeout(function () {
+							$('#dialog').dialog("close");
+						}, 4000);
+					}
+				});
+
+				// TODO: remove title bar in jquery 
+				//  $(".ui-dialog-titlebar").hide()    
+				// TODO: js code to show one time pop up
+				sessionStorage.setItem('#dialog', 'true');
+			}
+		});
+	</script>
+	<!-- TODO: Typed.js -->
+	<script src="materialize/js/typed.js"></script>
+	<script>
+		var typed = new Typed('.type', {
+			strings: ['Web Development!', 'App Development!', 'Database Management!', 'Desktop App Development!'],
+			typeSpeed: 40, // Default value
+			backSpeed: 60, // Default value
+			loop: true
+		});
+		var typed = new Typed('.type1', {
+			strings: ['Photoshop!', 'UI / UX!', 'Web Design Tools!', 'Web Hosting!'],
+			typeSpeed: 40, // Default value
+			backSpeed: 60, // Default value
+			loop: true
+		});
+	</script>
+	<script>
+		new ClipboardJS('.btn');
+		function run(hex) {
+			swal({
+				title: hex + " Copied",
+				icon: "success",
+				timer: 1500
+			});
+		}
+		function runTrans(hex) {
+			swal({
+				title: hex,
+				icon: "success",
+				timer: 1500
+			});
+		}
+	</script>
+</body>
+
+</html>
